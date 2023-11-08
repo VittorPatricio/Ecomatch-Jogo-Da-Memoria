@@ -349,13 +349,13 @@ header{
 
 @media(max-widht: 1660px){
    .grid {
-    height: 70%;
+    height: 60%;
     margin-top: 3%;
-    gap: 2%;
+    gap: 1%;
   }
   .card {
-    width: 50%;
-    height: 65%;
+    width: 40%;
+    height: 55%;
   }
 }
 
