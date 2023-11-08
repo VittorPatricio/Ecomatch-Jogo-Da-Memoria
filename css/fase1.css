@@ -348,8 +348,11 @@ header{
 }
 
 @media(max-widht: 1660px){
+  #body{
+  background-color: #000;
+  }
    .grid {
-    height: 60%;
+    height: 50%;
     margin-top: 3%;
     gap: 1%;
   }
