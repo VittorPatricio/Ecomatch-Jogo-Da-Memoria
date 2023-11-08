@@ -308,18 +308,18 @@ header{
     font-size: 1.5rem;
     border-radius: 12px;
     height: 8%;
-    width: 45%;
+    width: 50%;
     align-items: center;
     font-size: 2rem;
   }
   .grid {
     height: 80%;
     margin-top: 4%;
-    gap: 2%;
+    gap: 0.5%;
   }
   .card {
     width: 80%;
-    height: 80%;
+    height: 95%;
   }
 
   .modal-content2 {
