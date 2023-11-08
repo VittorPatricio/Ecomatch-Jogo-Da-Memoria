@@ -347,6 +347,18 @@ header{
   }
 }
 
+@media(max-widht: 1660px){
+   .grid {
+    height: 80%;
+    margin-top: 3%;
+    gap: 2%;
+  }
+  .card {
+    width: 60%;
+    height: 75%;
+  }
+}
+
 @media(max-width: 1445px){
   header{
     top: 4.5%;
