@@ -1,0 +1,738 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  user-select:none;
+}
+
+#body {
+  background-color: #D9F1FD;
+  background-image: url("../img/mar.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  position: absolute;
+  top: 12%;
+  border-radius: 15%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  place-items: center;
+  gap: 0.5%;
+  user-select: none;
+  margin: 0 auto;
+}
+
+.grid > .card {
+  aspect-ratio: 3/4;
+  background-color: #1a5c7b;
+  border-radius: 5px;
+  position: relative;
+  transition: all 500ms ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+}
+
+.botao-inicial {
+  position: fixed;
+  z-index: 600;
+  display: flex;
+  gap: 50px;
+  cursor: pointer;
+  top: 13%;
+  left: 3%;
+  width: 6%;
+  height: 4%;
+  justify-content: space-between;
+}
+
+#imagem {
+  transition: all 500ms ease;
+  width: 100%;
+  height: 100%;
+}
+
+#imagem:hover {
+  transform: scale(1.2);
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid rgb(184, 180, 180);
+  border-radius: 7px;
+  filter: drop-shadow(0px 5px 3px rgba(140, 128, 128, 0.25));
+  transition: all 800ms ease;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.back {
+  background-image: url("../img/parte-de-tras.svg");
+  backface-visibility: hidden;
+  user-select: none;
+}
+
+.reveal-card {
+  transform: rotateY(180deg);
+}
+
+.disabled-card {
+  filter: saturate(0);
+  opacity: 0.5;
+}
+
+.modal-finalizacao{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 127, 175, 0.5);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-menor-finalizacao{
+  background: #1a5c7b;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s;
+  word-spacing: 0.5rem;
+  margin: 0;
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 50%;
+  height: 35%;
+}
+
+.modal-menor-finalizacao > p{
+  margin: 0;
+  color: #F8FFE6;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 80%;
+}
+
+.spinner {
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top: 6px solid #05174c;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  width: 60px;
+  height: 60px;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.fundo-inicio {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 127, 175, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-fase-inicio  {
+  background: #1a5c7b;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s;
+  word-spacing: 1rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 20%;
+}
+
+.texto-fase-inicio > p{
+  margin: 0;
+  color: #F8FFE6;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* CSS para ocultar o modal até que a página esteja carregada */
+.texto-fase-inicio {
+  display: none; /* Oculta o modal inicialmente */
+}
+
+#body.loading .texto-fase-inicio {
+  display: flex; /* Exibe o modal quando a página estiver carregada */
+}
+.modal2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 127, 175, 0.5);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content2 {
+  background: #1a5c7b;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 3rem;
+  z-index: 3;
+  animation: fadeIn 1s;
+  word-spacing: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.modal-content2 p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.botoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#confirmYes,
+#confirmNo {
+  color: #fff;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  border: 2px solid #05174c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+#confirmYes:hover,
+#confirmNo:hover {
+  background-clip: border-box;
+  background-size: 100% auto;
+}
+
+#confirmYes:hover {
+  background-color: #d94545;
+}
+
+#confirmNo:hover {
+  background-color: #114f0f;
+}
+
+@media (max-width: 2580px){
+  #body {
+    padding: 4% 0% 2% 0%;
+    background-position: bottom;
+    background-position-y: 80%;
+    background-size: 105%;
+  }
+  header{
+    top: 4.5%;
+    right: 27.5%;
+    padding: 2% 2%;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    height: 8%;
+    width: 45%;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .grid{
+    gap: 2%;
+    height: 100%;
+    margin: 0%;
+  }
+  .card{
+    margin-top:2%;
+    width: 100%;
+    height: 100%;
+  }
+  .modal-menor-finalizacao{
+    height: 40%;
+    width: 50%;
+  }
+  .modal-menor-finalizacao > p{
+    font-size: 2.5rem;
+  }
+  .modal-content2 {
+    width: 60%;
+    height: 30%;
+  }
+
+  .modal-content2 p {
+    font-size: 3rem;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 3rem;
+    padding: 0.25rem 1.5rem;
+  }
+  .botoes {
+    width: 60%;
+    height: auto;
+  }
+  .botao-inicial {
+    top: 3%;
+    left: 3%;
+    width: 7%;
+    height: 12%;
+  }
+}
+
+@media (nax-width: 1980px){
+  header{
+    width: 45%;
+  }
+  .grid{
+    gap: 2%;
+    height: 100%;
+    margin: 0%;
+  }
+  .card{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media(max-width: 1445px){
+  header{
+    top: 4.5%;
+    right: 27.5%;
+    padding: 2% 2%;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    height: 8%;
+    width: 45%;
+    align-items: center;
+  }
+  .grid{
+    padding: 3% 6% 0% 6%;
+    gap: 2%;
+    height: 100%;
+    margin: 0%;
+  }
+  .card{
+    width: 100%;
+    height: 100%;
+  }
+  .modal-menor-finalizacao{
+    height: 45%;
+    width: 60%;
+  }
+  .modal-menor-finalizacao > p{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  #body {
+    padding: 4% 0% 2% 0%;
+  }
+  header{
+    top: 4.5%;
+    place-items: center;
+    padding: 2% 2%;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    height: 7%;
+    align-items: center;
+    width: 45%;
+  }
+  .grid{
+    padding: 3% 6% 0% 6%;
+    gap: 0.5%;
+    height: 100%;
+  }
+  .card{
+    width: 75%;
+    height: 95%;
+  }
+  .botao-inicial {
+    width: 6%;
+    height: 10%;
+  }
+  .modal-content2 p{
+    font-size: 1.85rem;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 1.65rem;
+    padding: 0.25rem 1.5rem;
+  }
+}
+@media (max-width:1285px){
+  header{
+    width: 50%;
+    right: 25%;
+  }
+  .card {
+    width: 85%;
+    height: 95%;
+  }
+}
+
+@media (max-width: 886px){
+  #body{
+    background-size: cover;
+  }
+  header{
+    top: 3%;
+    right: 4%;
+    padding: 2% 4%;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    height: 7%;
+    align-items: center;
+    width: 65%;
+  }
+  .grid{
+    padding: 3% 6% 3% 6%;
+    height: 80%;
+    gap: 2%;
+  }
+  .card{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+  }
+  .modal-menor-finalizacao{
+    height: 35%;
+    width: 70%;
+  }
+  .modal-content2 p{
+    font-size: 1.75rem;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 1.5rem;
+    padding: 0.25rem 1.5rem;
+  }
+  .botao-inicial{
+    top: 2%;
+    left: 4%;
+    width: 8%;
+    height: 8%;
+  }
+  .texto-fase-inicio{
+    width: 60%;
+    height: 15%;
+  }
+}
+
+@media (max-width: 835px){
+  #body{
+    padding: 15% 5% 10% 5%;
+  }
+  header{
+    top: 14%;
+    right: 10%;
+    padding: 2% 4%;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    height: 7%;
+    align-items: center;
+    width: 80%;
+  }
+  .grid{
+    padding: 3% 6% 3% 6%;
+    height: 80%;
+    gap: 2%;
+    margin-top: 5%;
+  }
+  .botao-inicial {
+    top: 3%;
+    left: 5%;
+    width: 12%;
+    height: 8%;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 1.5rem;
+    border: 4px solid #05174c;
+  }
+  .modal-content2{
+    width: 80%;
+    height: 20%;
+  }
+  .modal-content2 p {
+    font-size: 2rem;
+    word-spacing: 0.2rem;
+  }
+  .botoes{
+    width: 80%;
+  }
+}
+@media (max-width: 770px){
+  header{
+    top:10%;
+  }
+  .botao-inicial{
+    top: 1%;
+  }
+}
+
+@media (max-width: 560px){
+  #body{
+    padding: 15% 5% 10% 5%;
+  }
+  header{
+    top: 14%;
+    right: 5%;
+    padding: 5%;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    height: 8%;
+    align-items: center;
+    width: 92%;
+  }
+  .grid{
+    padding: 0%;
+    height: 100%;
+    gap: 2%;
+    margin-top: 6%;
+  }
+  .card{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+  }
+  .modal-menor-finalizacao{
+    height: 30%;
+    width: 85%;
+  }
+  .modal-menor-finalizacao > p{
+    font-size: 1.2rem;
+  }
+  .spinner{
+    height: 42px;
+    width: 42px;
+  }
+  .texto-fase-inicio {
+    width: 80%;
+    height: 15%;
+  }
+  .texto-fase-inicio p {
+    font-size: 2rem;
+  }
+  .botao-inicial {
+    top: 4%;
+    left: 5%;
+    width: 12%;
+    height: 8%;
+  }
+  .modal-content2{
+    width: 80%;
+  }
+  .modal-content2 p {
+    font-size: 1rem;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 0.75rem;
+    border: 2px solid #05174c;
+  }
+  .botoes{
+    width: 100%;
+  }
+}
+
+@media (max-width: 365px){
+  header{
+    top: 13%;
+    padding: 4% 3%;
+    font-size: 1rem;
+  }
+  .grid{
+    gap: 1%;
+  }
+  .botao-inicial{
+    top: 2%;
+  }
+  .modal-menor-finalizacao > p{
+    font-size: 0.9rem;
+  }
+  .texto-fase-inicio p {
+    font-size: 1.5rem;
+  }
+  .modal-content2 p {
+    font-size: 0.9rem;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 0.65rem;
+    border: 2px solid #05174c;
+  }
+}
+
+@media (max-width: 340px){
+header{
+  font-size: 0.8rem;
+  top: 11%;
+  padding: 4% 8%;
+  border-radius: 10px;
+}
+.grid{
+  margin-top: 6%;
+}
+.botao-inicial {
+  top: 1%;
+}
+.texto-fase-inicio p {
+  font-size: 1.5rem;
+}
+.modal-menor-finalizacao{
+  height: 40%;
+}
+.spinner{
+  height: 35px;
+  width: 35px;
+}
+.modal-content2{
+  height: 40%;
+}
+.modal-content2 p {
+  font-size: 1.2rem;
+}
+#confirmYes,
+#confirmNo {
+  font-size: 0.9rem;
+  border: 2px solid #05174c;
+}
+}
+
+@media (max-width: 170px){
+  #body{
+    padding: 0;
+    
+  }
+  .texto-fase-inicio{
+    width: 50%;
+    height: 20%;
+    word-spacing: 0.75px;
+  }
+  .texto-fase-inicio p {
+    font-size: 0.5rem;
+  }
+  .modal-content2{
+    width: 50%;
+    height: 30%;
+    word-spacing: 0.50px;
+  }
+  .modal-content2 > p {
+    font-size: 0.25rem;
+    margin: 0;
+  }
+
+  #confirmYes,
+  #confirmNo {
+    border: 2px solid #05174c;
+    /*font-size: 2rem;*/
+    border-radius: 0.2rem;
+    font-size: 0.15rem;
+    margin-top: 10%;
+    padding: 2px 5px;
+  }
+
+  .botao-inicial{
+    top:2%;
+    left: 2%;
+  }
+  .grid{
+    width: 70%;
+    height: 70%;
+    gap: 2%;
+  }
+  .card{
+    width: 90%;
+    height: 100%;
+  }
+  .face{
+    border: 0.2px solid rgb(184, 180, 180);
+    border-radius: 2px;
+  }
+}
