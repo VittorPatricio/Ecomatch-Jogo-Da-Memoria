@@ -318,7 +318,7 @@ header{
     gap: 0.5%;
   }
   .card {
-    width: 70%;
+    width: 85%;
     height: 95%;
   }
 
@@ -345,7 +345,7 @@ header{
     width: 7%;
     height: 12%;
   }
-}T
+}
 
 @media(max-width: 1700px){
   header{
