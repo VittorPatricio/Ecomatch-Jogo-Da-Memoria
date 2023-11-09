@@ -406,11 +406,13 @@ header{
     right: auto;
   }
   .grid{
+    margin-top: 3%;
+    height: 100%;
     width: 50%;
   }
   .card {
-    width: 85%;
-    height: 65%;
+    width: 65%;
+    height: 85%;
   }
 }
 
