@@ -359,7 +359,7 @@ header{
     align-items: center;
   }
   .grid {
-    margin-top: 4%;
+    margin-top: 2%;
     height: 80%;
     gap: 0.5%;
   }
@@ -386,7 +386,7 @@ header{
     width: 55%;
   }
   .grid {
-    margin-top: 5%;
+    margin-top: 2%;
     height: 90%;
     gap: 0.5%;
   }
