@@ -313,7 +313,7 @@ header{
     font-size: 2rem;
   }
   .grid {
-    margin-top: 4%;
+    margin-top: 2%;
     height: 80%;
     gap: 0.5%;
   }
@@ -391,7 +391,7 @@ header{
     gap: 0.5%;
   }
   .card {
-    width: 60%;
+    width: 70%;
     height: 95%;
   }
   .botao-inicial {
@@ -405,8 +405,11 @@ header{
     width: 50%;
     right: auto;
   }
+  .grid{
+    width: 50%;
+  }
   .card {
-    width: 65%;
+    width: 80%;
     height: 95%;
   }
 }
@@ -428,6 +431,7 @@ header{
   .grid{
     padding: 3% 6% 3% 6%;
     height: 80%;
+    width: 100%;
     gap: 2%;
   }
   .card{
