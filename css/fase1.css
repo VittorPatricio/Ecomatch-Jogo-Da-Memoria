@@ -533,7 +533,7 @@ header{
   }
   .card{
     width: 100%;
-    height: 70%;
+    height: 68%;
   }
   .modal3 {
     width: 85%;
@@ -566,7 +566,7 @@ header{
 @media (max-width: 412px){
   .card{
     width: 100%;
-    height: 75%;
+    height: 70%;
 }
 }
 
@@ -580,7 +580,7 @@ header{
     margin-top: 25%;
   }
   .card{
-    height: 75%
+    height: 68%
   }
 }
 
@@ -600,7 +600,7 @@ header{
     top: 2%;
   }
   .card{
-    height: 75%
+    height: 68%
   }
   .modal-menor-finalizacao > p{
     font-size: 0.9rem;
@@ -621,7 +621,7 @@ header{
 @media (max-width: 360px){
   .card{
     width: 100%;
-    height: 70%;
+    height: 68%;
    }
 }
 
