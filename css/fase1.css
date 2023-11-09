@@ -387,12 +387,12 @@ header{
   }
   .grid {
     margin-top: 2%;
-    height: 90%;
+    height: 80%;
     gap: 0.5%;
   }
   .card {
-    width: 70%;
-    height: 95%;
+    width: 65%;
+    height: 85%;
   }
   .botao-inicial {
     width: 6%;
@@ -410,7 +410,7 @@ header{
   }
   .card {
     width: 85%;
-    height: 85%;
+    height: 65%;
   }
 }
 
