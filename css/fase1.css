@@ -386,13 +386,13 @@ header{
     width: 55%;
   }
   .grid {
-    margin-top: 2%;
-    height: 80%;
-    gap: 0.5%;
+    margin-top: 4%;
+    height: 100%;
+    width: 50%;
   }
   .card {
     width: 65%;
-    height: 85%;
+    height: 95%;
   }
   .botao-inicial {
     width: 6%;
