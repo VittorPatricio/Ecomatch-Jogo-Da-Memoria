@@ -556,7 +556,7 @@ header{
   }
   .card{
     width: 100%;
-    height: 75%;
+    height: 70%;
   }
   .texto-fase-inicio {
     width: 75%;
@@ -601,7 +601,7 @@ header{
 @media (max-width: 416px){
   .card{
     width: 100%;
-    height: 78%;
+    height: 70%;
 }
   .grid{
     margin-top: 25%;
@@ -653,7 +653,7 @@ header{
   }
   .card{
     width: 100%;
-    height: 70%
+    height: 66%
   }
   .modal-menor-finalizacao{
     width: 90%;
@@ -688,7 +688,7 @@ header{
   }
   .card{
     width: 100%;
-    height: 82%
+    height: 67%
   }
   .texto-fase-inicio > p {
     font-size: 1.5rem;
@@ -707,7 +707,7 @@ header{
 @media (max-width: 380px){
   .card{
     width: 100%;
-    height: 84%;
+    height: 78%;
   }
   .modal-menor-finalizacao{
     width: 90%;
@@ -727,7 +727,7 @@ header{
   }
   .card{
     width: 100%;
-    height: 70%;
+    height: 67%;
    }
    .modal-menor-finalizacao{
     width: 85%;
