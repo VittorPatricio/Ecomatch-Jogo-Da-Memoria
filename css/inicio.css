@@ -82,7 +82,7 @@ main{
     width: 60%;
 }
 
-#botao{
+#botao-iniciar, #botao-creditos{
     color: #5C9E32;
     animation: textclip 3s linear infinite; 
     border: 3px solid #1d7b1a;
@@ -93,7 +93,7 @@ main{
     border-radius: 12px;
   }
   
-#botao:hover {
+#botao-iniciar:hover, #botao-creditos:hover{
     color: #ffff;
 }
 
@@ -127,7 +127,7 @@ main > p{
         height: 75%;
         width: 20%;
     }
-    #botao{
+    #botao-iniciar, #botao-creditos{
         font-size: 2.5rem;
     }
 }
@@ -142,7 +142,7 @@ main > p{
         height: 75%;
         width: 25%;
     }
-    #botao{
+    #botao-iniciar,#botao-creditos{
         font-size: 1.5rem;
     }
 }
@@ -184,7 +184,7 @@ main > p{
         height: 35%;
         width: 40%;
     }
-    #botao{
+    #botao-iniciar, #botao-creditos{
         border: 0.5px solid #1d7b1a;
         font-size: 0.5rem;
         border-radius: 6px;
