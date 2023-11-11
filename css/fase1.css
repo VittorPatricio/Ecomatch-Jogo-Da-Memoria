@@ -552,7 +552,7 @@ header{
     height:80%;
     gap: 2%;
     padding: 0%;
-    margin-top: 18%;
+    margin-top: 16%;
   }
   .card{
     width: 100%;
@@ -604,7 +604,7 @@ header{
     height: 78%;
 }
   .grid{
-    margin-top: 30%;
+    margin-top: 25%;
   }
   .modal-menor-finalizacao{
     width: 90%;
@@ -645,7 +645,7 @@ header{
   .grid{
     height: 100%;
     gap: 1%;
-    margin-top: 28%;
+    margin-top: 22%;
   }
   .botao-inicial{
     top: 2%;
