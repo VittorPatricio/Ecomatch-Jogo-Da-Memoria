@@ -126,7 +126,7 @@ header{
 }
 
 .modal-menor-finalizacao{
-  background: #65ab15;
+  background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   animation: fadeIn 1s;
@@ -142,7 +142,7 @@ header{
 
 .modal-menor-finalizacao > p{
   margin: 0;
-  color: #F8FFE6;
+  color: #497e0c;
   font-weight: bold;
   font-size: 2rem;
   text-transform: uppercase;
@@ -385,6 +385,23 @@ header{
     align-items: center;
     width: 55%;
   }
+  .modal-content2 > p{
+    font-size: 1.7rem;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 1.2rem;
+    padding: 0.25rem 1.5rem;
+    border: 2.5px solid #074c05;
+  }
+  
+  .texto-fase-inicio{
+    width: 32%;
+  }
+  .texto-fase-inicio > p{
+    word-spacing: 0.2rem;
+    font-size: 2.2rem;
+  }
   .grid {
     margin-top: 4%;
     height: 100%;
@@ -493,15 +510,15 @@ header{
   }
   #confirmYes,
   #confirmNo {
-    font-size: 1.5rem;
-    border: 4px solid #074c05;
+    font-size: 1.2rem;
+    border: 2.2px solid #074c05;
   }
   .modal-content2{
     width: 80%;
     height: 20%;
   }
   .modal-content2 p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     word-spacing: 0.2rem;
   }
   .botoes{
@@ -539,15 +556,15 @@ header{
   }
   .card{
     width: 100%;
-    height: 68%;
+    height: 75%;
   }
-  .modal3 {
-    width: 85%;
-    height: 15%;
+  .texto-fase-inicio {
+    width: 75%;
+    height: 12%;
   }
-  .modal3 p {
-    font-size: 2rem;
-  }
+  .texto-fase-inicio > p {
+    font-size: 1.7rem;
+}
   .botao-inicial {
     top: 5%;
     left: 5%;
@@ -557,6 +574,7 @@ header{
   #confirmYes,
   #confirmNo {
     font-size: 0.75rem;
+    border: 2px solid #074c05;
   }
   .modal-content2{
     width: 80%;
@@ -567,30 +585,57 @@ header{
   .botoes{
     width: 100%;
   }
+  .modal-menor-finalizacao{
+    width: 90%;
+    height: 30%;
+  }
+  .modal-menor-finalizacao > p{
+    font-size: 1.2rem;
+  }
+  .spinner{
+    width: 42px;
+    height: 42px;
+  }
 }
 
-@media (max-width: 412px){
+@media (max-width: 416px){
   .card{
     width: 100%;
-    height: 70%;
+    height: 78%;
 }
+  .grid{
+    margin-top: 30%;
+  }
+  .modal-menor-finalizacao{
+    width: 90%;
+    height: 30%;
+  }
+  .modal-menor-finalizacao > p{
+    font-size: 1.2rem;
+  }
+  .spinner{
+    width: 42px;
+    height: 42px;
+  }
+  .texto-fase-inicio > p {
+    font-size: 1.7rem;
+}
+  .texto-fase-inicio{
+    width: 65%;
+    height: 12%;
+}
+  .modal-content2 > p {
+    font-size: 1rem;
+}
+}
+
+@media (max-width: 413px){
+  .card{
+    height: 68%;
+  }
 }
 
 @media (max-width: 395px){
-  header{
-    top: 16%;
-    right: auto;
-  }
-  .grid{
-    height: 80%;
-    margin-top: 25%;
-  }
-  .card{
-    height: 68%
-  }
-}
-
-@media (max-width: 392px){
   header{
     top: 13%;
     padding: 4% 3%;
@@ -598,37 +643,89 @@ header{
     right: auto;
   }
   .grid{
-    height: 80%;
+    height: 100%;
     gap: 1%;
-    margin-top: 18%;
+    margin-top: 28%;
   }
   .botao-inicial{
     top: 2%;
   }
   .card{
+    width: 100%;
     height: 68%
   }
+  .modal-menor-finalizacao{
+    width: 90%;
+    height: 30%;
+  }
   .modal-menor-finalizacao > p{
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
-  .texto-fase-inicio p {
-    font-size: 1.5rem;
+  .spinner{
+    width: 42px;
+    height: 42px;
   }
-  .modal-content2 p {
-    font-size: 0.9rem;
+  .texto-fase-inicio > p {
+    font-size: 1.6rem;
+  }
+  .texto-fase-inicio{
+    width: 65%;
+    height: 15%;
+  }
+  .modal-content2 > p {
+    font-size: 1rem;
   }
   #confirmYes,
   #confirmNo {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     border: 2px solid #074c05;
   }
 }
-
+@media (max-width: 392px){
+  .card{
+    width: 100%;
+    height: 78%
+  }
+  .texto-fase-inicio > p {
+    font-size: 1.5rem;
+  }
+  .modal-menor-finalizacao{
+    width: 90%;
+  }
+  .modal-menor-finalizacao > p{
+    font-size: 1.2rem;
+  }
+  .spinner{
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (max-width: 380px){
+  .card{
+    width: 100%;
+    height: 80%;
+  }
+  .modal-menor-finalizacao{
+    width: 90%;
+    height: 32%;
+  }
+  .modal-menor-finalizacao > p{
+    font-size: 1.2rem;
+  }
+  .spinner{
+    width: 35px;
+    height: 35px;
+  }
+}
 @media (max-width: 360px){
   .card{
     width: 100%;
-    height: 68%;
+    height: 63.5%;
    }
+   .modal-menor-finalizacao{
+    width: 85%;
+    height: 32%;
+  }
 }
 
 @media (max-width: 340px){
@@ -640,34 +737,39 @@ header{
   border-radius: 10px;
 }
 .grid{
-  margin-top: 6%;
+  margin-top: 8%;
+  height: 80%;
 }
 .card{
   width: 100%;
-  height: 100%;
+  height: 95%;
 }
 .botao-inicial {
   top: 1%;
 }
-.texto-fase-inicio p {
-  font-size: 1.5rem;
+.texto-fase-inicio > p {
+  font-size: 1rem;
 }
 .modal-menor-finalizacao{
   height: 40%;
+  width: 85%;
+}
+.modal-menor-finalizacao > p{
+  font-size: 1rem;
 }
 .spinner{
   height: 35px;
   width: 35px;
 }
 .modal-content2{
-  height: 40%;
+  height: 30%;
 }
-.modal-content2 p {
-  font-size: 1.2rem;
+.modal-content2 > p {
+  font-size: 0.75rem;
 }
 #confirmYes,
 #confirmNo {
-  font-size: 0.9rem;
+  font-size: 0.55rem;
   border: 2px solid #074c05;
 }
 }
