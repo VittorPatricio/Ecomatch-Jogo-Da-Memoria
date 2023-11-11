@@ -256,6 +256,7 @@ header{
 }
 
 .modal-content2 p {
+  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -415,9 +416,6 @@ header{
     width: 6%;
     height: 10%;
   }
-  .modal-menor-finalizacao{
-    height: 48%;
-  }
 }
 
 @media (max-width:1285px){
@@ -462,7 +460,7 @@ header{
     margin-top: 5%;
   }
   .modal-menor-finalizacao{
-    height: 38%;
+    height: 35%;
     width: 70%;
   }
   .modal-content2 p{
@@ -555,11 +553,11 @@ header{
     height:80%;
     gap: 2%;
     padding: 0%;
-    margin-top: 18%;
+    margin-top: 16%;
   }
   .card{
     width: 100%;
-    height: 75%;
+    height: 70%;
   }
   .texto-fase-inicio {
     width: 75%;
@@ -590,35 +588,100 @@ header{
   }
   .modal-menor-finalizacao{
     width: 90%;
-    height: 35%;
+    height: 30%;
   }
   .modal-menor-finalizacao > p{
     font-size: 1.2rem;
   }
   .spinner{
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 430px){
+    #body{
+    padding: 15% 5% 10% 5%;
+  }
+  header{
+    top: 14%;
+    right: auto;
+    padding: 5%;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    height: 8%;
+    align-items: center;
+    width: 92%;
+  }
+  .grid{
+    height:80%;
+    gap: 2%;
+    padding: 0%;
+    margin-top: 16%;
+  }
+  .card{
+    width: 100%;
+    height: 70%;
+  }
+  .texto-fase-inicio {
+    width: 75%;
+    height: 12%;
+  }
+  .texto-fase-inicio > p {
+    font-size: 1.7rem;
+}
+  .botao-inicial {
+    top: 5%;
+    left: 5%;
+    width: 12%;
+    height: 8%;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 0.75rem;
+    border: 2px solid #05174c;
+  }
+  .modal-content2{
+    width: 80%;
+  }
+  .modal-content2 p {
+    font-size: 1rem;
+  }
+  .botoes{
+    width: 100%;
+  }
+  .modal-menor-finalizacao{
+    width: 90%;
+    height: 30%;
+  }
+  .modal-menor-finalizacao > p{
+    font-size: 1.2rem;
+  }
+  .spinner{
+    width: 42px;
+    height: 42px;
   }
 }
 
 @media (max-width: 416px){
   .card{
     width: 100%;
-    height: 78%;
+    height: 70%;
 }
   .grid{
-    margin-top: 30%;
+    margin-top: 25%;
+    height:80%;
   }
   .modal-menor-finalizacao{
     width: 90%;
-    height: 35%;
+    height: 30%;
   }
   .modal-menor-finalizacao > p{
     font-size: 1.2rem;
   }
   .spinner{
-    width: 37px;
-    height: 37px;
+    width: 42px;
+    height: 42px;
   }
   .texto-fase-inicio > p {
     font-size: 1.7rem;
@@ -646,27 +709,27 @@ header{
     right: auto;
   }
   .grid{
-    height: 100%;
+    height: 80%;
     gap: 1%;
-    margin-top: 28%;
+    margin-top: 22%;
   }
   .botao-inicial{
     top: 2%;
   }
   .card{
     width: 100%;
-    height: 68%
+    height: 66%
   }
   .modal-menor-finalizacao{
     width: 90%;
-    height: 35%;
+    height: 30%;
   }
   .modal-menor-finalizacao > p{
     font-size: 1.2rem;
   }
   .spinner{
-    width: 36px;
-    height: 36px;
+    width: 42px;
+    height: 42px;
   }
   .texto-fase-inicio > p {
     font-size: 1.6rem;
@@ -685,16 +748,35 @@ header{
   }
 }
 @media (max-width: 392px){
+  .grid{
+  height: 80%;
+  }
   .card{
     width: 100%;
-    height: 78%
+    height: 67%
   }
   .texto-fase-inicio > p {
     font-size: 1.5rem;
   }
   .modal-menor-finalizacao{
     width: 90%;
-    height: 35%;
+  }
+  .modal-menor-finalizacao > p{
+    font-size: 1.2rem;
+  }
+  .spinner{
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (max-width: 380px){
+  .card{
+    width: 100%;
+    height: 78%;
+  }
+  .modal-menor-finalizacao{
+    width: 90%;
+    height: 32%;
   }
   .modal-menor-finalizacao > p{
     font-size: 1.2rem;
@@ -704,31 +786,17 @@ header{
     height: 35px;
   }
 }
-@media (max-width: 380px){
-  .card{
-    width: 100%;
-    height: 80%;
-  }
-  .modal-menor-finalizacao{
-    width: 90%;
-    height: 35%;
-  }
-  .modal-menor-finalizacao > p{
-    font-size: 1.2rem;
-  }
-  .spinner{
-    width: 34px;
-    height: 34px;
-  }
-}
 @media (max-width: 360px){
+  .grid{
+  height:80%;
+  }
   .card{
     width: 100%;
-    height: 63.5%;
+    height: 67%;
    }
    .modal-menor-finalizacao{
     width: 85%;
-    height: 35%;
+    height: 32%;
   }
 }
 
@@ -755,15 +823,15 @@ header{
   font-size: 1rem;
 }
 .modal-menor-finalizacao{
-  height: 35%;
+  height: 40%;
   width: 85%;
 }
 .modal-menor-finalizacao > p{
   font-size: 1rem;
 }
 .spinner{
-  height: 33px;
-  width: 33px;
+  height: 35px;
+  width: 35px;
 }
 .modal-content2{
   height: 30%;

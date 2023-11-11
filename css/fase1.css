@@ -151,8 +151,8 @@ header{
 }
 
 .spinner {
-  border: 6px solid rgba(255, 255, 255, 0.3);
-  border-top: 6px solid #499e32;
+  border: 6px solid #a6f291;
+  border-top: 6px solid #408d2b;
   border-radius: 50%;
   animation: spin 2s linear infinite;
   width: 60px;

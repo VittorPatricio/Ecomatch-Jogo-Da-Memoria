@@ -85,7 +85,7 @@ const checkCards = () =>{
         const matchSound = document.getElementById('matchSound');
         matchSound.play();
 
-        window.navigator.vibrate(550)
+        window.navigator.vibrate(550);
       
         firstCard = '';
         secondCard = '';
