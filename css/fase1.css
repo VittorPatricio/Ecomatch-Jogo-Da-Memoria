@@ -137,7 +137,7 @@ header{
   justify-content: space-evenly;
   flex-direction: column;
   width: 50%;
-  height: 35%;
+  height: 45%;
 }
 
 .modal-menor-finalizacao > p{
@@ -155,8 +155,8 @@ header{
   border-top: 6px solid #408d2b;
   border-radius: 50%;
   animation: spin 2s linear infinite;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 
