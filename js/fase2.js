@@ -77,22 +77,21 @@ const checkCards = () =>{
         firstCard = '';
         secondCard = '';
 
-        
-        const matchSound = document.getElementById('matchSound');
-        matchSound.play();
-
-        firstCard = '';
-        secondCard = '';
-      
         checkEndGame();
-        
-    }else{
+
+    }
+
+    else{
         setTimeout(() =>  {
         firstCard.classList.remove('reveal-card');
         secondCard.classList.remove('reveal-card');
+
             firstCard = '';
             secondCard = '';
+
+
         }, 800);
+ 
     }
 }
 
