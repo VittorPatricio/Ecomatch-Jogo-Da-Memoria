@@ -299,6 +299,7 @@ header{
   #body {
     padding: 4% 0% 2% 0%;
     background-position: bottom;
+    background-size: 100%;
   }
   header{
     top: 4.5%;
@@ -453,8 +454,8 @@ header{
     gap: 2%;
   }
   .card{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     margin-top: 5%;
   }
   .modal-menor-finalizacao{
