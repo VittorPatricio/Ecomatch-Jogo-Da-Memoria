@@ -80,7 +80,10 @@ const checkCards = () =>{
         
         const matchSound = document.getElementById('matchSound');
         matchSound.play();
-        
+
+        firstCard = '';
+        secondCard = '';
+      
         checkEndGame();
         
     }else{
