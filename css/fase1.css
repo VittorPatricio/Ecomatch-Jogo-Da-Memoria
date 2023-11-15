@@ -383,7 +383,7 @@ header{
     border-radius: 12px;
     height: 7%;
     align-items: center;
-    width: 55%;
+    width: 50%;
   }
   .modal-content2 > p{
     font-size: 1.7rem;
@@ -419,7 +419,7 @@ header{
 
 @media (max-width:1285px){
   header{
-    width: 50%;
+    width: 45%;
     right: auto;
   }
   .grid{
