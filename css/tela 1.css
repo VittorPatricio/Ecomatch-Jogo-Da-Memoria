@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  user-select:none
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* .botoes{
+
+}
+
+#botao-voltar, #botao-som{
+    
+} */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+#personagem{
+    width: 20rem;
+    height: 30rem;
+    position: absolute;
+    left: 5%;
+    bottom: 0%;
+    z-index: 100;
+}
+
+#ilha{
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    z-index: 90;
+}
+
+.dialogo{
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    bottom: 5%;
+    background-image: url("../img/caixadialogo.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 1rem;
+    z-index: 1;
+}
+
+p{
+    padding: 1rem; 
+}
