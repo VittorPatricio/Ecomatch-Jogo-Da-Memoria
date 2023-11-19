@@ -1,27 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Lato&family=Montserrat:wght@700&family=Poppins:wght@300;500;600;700&family=Roboto:wght@500&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
-  user-select:none
+  font-family: 'Roboto';
+  font-weight: 600;
 }
 
 body{
     width: 100vw;
     height: 100vh;
+    background: var(--Fundo, #F8FFE6);
 }
 
-/* .botoes{
+.botao-inicial{ 
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    width: 15%;
+    height: 5rem;
+ }
 
-}
+ #inicio, #som {
+    width: 4rem;
+    height: 4rem;
+    transition: all 500ms ease;
+  }
+  
+  #inicio:hover, #som:hover {
+    transform: scale(1.2);
+  }
 
-#botao-voltar, #botao-som{
-    
-} */
-
-main{
+ main{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,34 +44,74 @@ main{
 
 #personagem{
     width: 20rem;
-    height: 30rem;
+    height: 33rem;
     position: absolute;
-    left: 5%;
+    left: 0%;
     bottom: 0%;
     z-index: 100;
+    background-color: #0002;
 }
 
 #ilha{
-    width: 10rem;
-    height: 10rem;
+    width: 30rem;
+    height: 20rem;
     position: absolute;
     top: 5%;
-    right: 10%;
+    right: 15%;
     z-index: 90;
+    background-color: #0007;
+}
+
+span{
+    color: #1A6B17;
 }
 
 .dialogo{
     width: 90%;
-    height: 30%;
+    height: 25%;
     position: absolute;
     bottom: 5%;
     background-image: url("../img/caixadialogo.svg");
-    background-repeat: no-repeat;
     background-size: 100%;
+    background-repeat: no-repeat;
     font-size: 1rem;
     z-index: 1;
+    color: #001;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    user-select:none;
+    z-index: 150;
+    padding: 0.5rem 0rem;
+    word-spacing: 2px;
 }
 
 p{
-    padding: 1rem; 
+    height: 2%;
+    padding: 0rem 2.5rem; 
 }
+
+.confirmationModal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 82, 4, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-pequeno{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  .modal-pequeno p {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
