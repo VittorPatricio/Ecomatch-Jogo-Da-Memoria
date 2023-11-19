@@ -80,6 +80,7 @@ const checkCards = () =>{
         const matchSound = document.getElementById('matchSound');
         matchSound.play();
         
+        
         checkEndGame();
 
     }
@@ -183,16 +184,28 @@ window.addEventListener('load', openModal);
 
 
 
-const startTime = () =>{
-  setTimeout(() =>{
-    this.loop = setInterval(() => {
 
-      const currentTime = +timer.innerHTML;
-      timer.innerHTML = currentTime + 1;
-  
+const startTime = () => {
+  let totalSeconds = 0;
+
+  setTimeout(() => {
+    this.loop = setInterval(() => {
+      totalSeconds++;
+
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds = totalSeconds % 60;
+
+      
+      const formattedMinutes = String(minutes).padStart(2, '0');
+      const formattedSeconds = String(seconds).padStart(2, '0');
+
+      
+      timer.innerHTML = `${formattedMinutes}:${formattedSeconds}`;
+
     }, 1000);
-  },3000);
-}
+  }, 3000);
+};
+
 
 window.onload = () =>{
 
