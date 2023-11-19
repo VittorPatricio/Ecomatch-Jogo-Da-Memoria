@@ -63,7 +63,7 @@ const checkEndGame = () => { //passa de fase aparecendo um modal interativo
 
 
       setTimeout(() =>  {
-        window.location.href = "fase2.html";
+        window.location.href = "#.html";
       }, 1500);
 
 
