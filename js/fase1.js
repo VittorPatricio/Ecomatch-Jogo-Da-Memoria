@@ -45,9 +45,13 @@ const checkEndGame = () => { //passa de fase aparecendo um modal interativo
   const fundo = document.getElementById('modal-finalizacao');
 
   const mensagemfinalizacao = document.getElementById('modal-menor-finalizacao');
+
+  let florestaSegundos;
+
+  
   if (disabledCards.length == 20) {
 
-    clearInterval(this.loop);
+    florestaSegundos = clearInterval(this.loop);
     
     setTimeout(() =>  {
       mensagemfinalizacao .style.opacity = 0;

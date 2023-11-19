@@ -43,8 +43,13 @@ const checkEndGame = () => { //passa de fase aparecendo um modal interativo
   const fundo = document.getElementById('modal-finalizacao');
 
   const mensagemfinalizacao = document.getElementById('modal-menor-finalizacao');
+
+  let cidadeSegundos;
+
+  
   if (disabledCards.length == 20) {
 
+   cidadeSegundos = clearInterval(this.loop); // Stop the timer when disabledCards is equal to 20
     
     setTimeout(() =>  {
       mensagemfinalizacao .style.opacity = 0;
@@ -58,7 +63,7 @@ const checkEndGame = () => { //passa de fase aparecendo um modal interativo
 
 
       setTimeout(() =>  {
-        window.location.href = "#.html";
+        window.location.href = "fase2.html";
       }, 1500);
 
 
