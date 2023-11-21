@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto';
-  font-weight: 600;
+  font-weight: 500;
 }
 
 body{
@@ -21,13 +21,13 @@ body{
     position: fixed;
     top: 2%;
     left: 2%;
-    width: 15%;
+    width: 10%;
     height: 5rem;
  }
 
  #inicio, #som {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     transition: all 500ms ease;
   }
   
@@ -43,16 +43,13 @@ body{
 }
 
 #personagem{
-    width: 20rem;
-    height: 33rem;
+    width: 25rem;
+    height: 35rem;
     position: absolute;
+    display: block;
     left: 0%;
     bottom: 0%;
-    z-index: 100;
-   /*  background-image: url(/img/Ecoguardia\ 1.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
+    z-index: -1;
 }
 
 #ilha{
@@ -74,24 +71,29 @@ span{
     height: 25%;
     position: absolute;
     bottom: 5%;
-    background-image: url("../img/caixadialogo.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    font-size: 1rem;
+    background-color: #fff;
+    font-size: 1.5rem;
     z-index: 1;
     color: #001;
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     user-select:none;
     z-index: 150;
-    padding: 0.5rem 0rem;
     word-spacing: 2px;
 }
 
+.texto{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px;
+    width: 95%;
+    height: 100%;
+}
+
 p{
-    height: 2%;
-    padding: 0rem 2.5rem; 
+    margin: 0;
 }
 
 .confirmationModal{
