@@ -345,6 +345,10 @@ header{
     width: 7%;
     height: 12%;
   }
+    #imagem{
+    width: 80%;
+    height: 80%;
+  }
 }
 
 @media(max-width: 1700px){
