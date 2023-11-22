@@ -11,7 +11,7 @@ function inicar() {
 
 function jogar(){
     console.log("oiii")
-    window.location.href = "fase1.html";
+    window.location.href = "tela 1.html";
 }
 
 window.onload = function() {
