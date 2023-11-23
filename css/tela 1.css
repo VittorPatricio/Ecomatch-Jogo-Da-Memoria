@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Lato&family=Montserrat:wght@700&family=Poppins:wght@300;500;600;700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import 'animate.css';
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto';
-  font-weight: 550;
+  font-family: "Poppins";
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -45,7 +46,7 @@ body{
     justify-content: center;
 }
 
-#personagem{
+#personagem, #personagem2{
     width: 38rem;
     height: 55rem;
     position: absolute;
@@ -147,3 +148,136 @@ p{
     text-transform: uppercase;
     font-weight: bold;
   }
+
+
+#tutorial{
+    width: 18rem;
+    height: 18rem;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+  @media(max-width: 390px){
+    .botao-inicial{ 
+        top: 2%;
+        left: 2%;
+        width: 25%;
+        justify-content: space-between;
+        height: 2.5rem;
+     }
+    
+     #inicio, #som {
+        width: auto;
+        height: 2.5rem;
+      }
+      .dialogo{
+        width: 95%;
+        height: 18%;
+        bottom: 3%;
+        font-size: 0.60rem;
+        font-weight: 700;
+        word-spacing: 0px;
+      }
+      .texto{
+        padding: 2px;
+        width: 95%;
+        height: 100%;
+    }
+    #botao-proximo{
+        width: 6rem;
+        height: 2rem;
+        padding: 0px 5px;
+        right: 3%;
+        bottom: 24%;
+        font-size: 0.65rem;
+        font-weight: 600;
+    }
+
+    #botao-proximo > img{
+        width: 1rem;
+        height: 0.75rem;
+    }
+    #personagem{
+        position: absolute;
+        width: 15rem;
+        height: 20rem;
+        left: -2%;
+        bottom: 18%;
+    }
+    #personagem2{
+        width: 12rem;
+        height: 20rem;
+        left: 0%;
+        bottom: 18%;
+    }
+    #ilha{
+        width: 15rem;
+        height: 15rem;
+        top: 3%;
+        right: 2%;
+        z-index: 90;
+    }
+}
+ 
+@media(max-width: 350px){
+    .botao-inicial{ 
+        top: 2%;
+        left: 2%;
+        width: 25%;
+        justify-content: space-between;
+        height: 2rem;
+     }
+    
+     #inicio, #som {
+        width: auto;
+        height: 2rem;
+      }
+      .dialogo{
+        width: 85%;
+        height: 18%;
+        bottom: 3%;
+        font-size: 0.38rem;
+        font-weight: 700;
+        word-spacing: 0px;
+      }
+      .texto{
+        padding: 2px;
+        width: 95%;
+        height: 100%;
+    }
+    #botao-proximo{
+        width: 4.5rem;
+        height: 1.2rem;
+        padding: 0px 5px;
+        right: 7.6%;
+        bottom: 22%;
+        font-size: 0.45rem;
+        font-weight: 600;
+    }
+
+    #botao-proximo > img{
+        width: 1rem;
+        height: 0.5rem;
+    }
+    #personagem{
+        width: 10rem;
+        height: 25rem;
+        left: 0%;
+        bottom: 1%;
+    }
+    #personagem2{
+        width: 10rem;
+        height: 15rem;
+        left: 0%;
+        bottom: 18%;
+    }
+    #ilha{
+        width: 10rem;
+        height: 10rem;
+        top: 1%;
+        top: 10%;
+        right: 8%;
+        z-index: 90;
+    }
+}
