@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import 'animate.css';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--Fundo, #F8FFE6);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.botao-inicial{ 
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    width: 10%;
+    height: 5rem;
+ }
+
+ #inicio, #som {
+    width: 5rem;
+    height: 5rem;
+    transition: all 500ms ease;
+  }
+  
+  #inicio:hover, #som:hover {
+    transform: scale(1.2);
+  }
+
+ main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#personagem, #personagem2{
+    width: 38rem;
+    height: 55rem;
+    position: absolute;
+    display: block;
+    left: 0%;
+    bottom: -1.5%;
+    z-index: -1;
+}
+
+#ilha{
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    top: 1%;
+    right: 10%;
+    z-index: 90;
+}
+
+span{
+    color: #1A6B17;
+}
+
+.dialogo{
+    width: 85%;
+    height: 20%;
+    position: absolute;
+    bottom: 3%;
+    background-color: #fff;
+    font-size: 1.5rem;
+    z-index: 999;
+    color: #001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select:none;
+    z-index: 150;
+    word-spacing: 2px;
+    border-radius: 4px;
+}
+
+ .dialogo::after{
+    background-color: var(--Gradiente, linear-gradient(94deg, rgba(127, 203, 40, 0.91) 7.79%, #5C9E32 96.33%));
+
+}
+ 
+.texto{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px;
+    width: 95%;
+    height: 100%;
+}
+
+p{
+    margin: 0;
+}
+
+#botao-proximo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 15px 35px;
+    background-color: #fff;
+    position: absolute;
+    right: 7.6%;
+    bottom: 25%;
+    color: #0C4D0A;
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+#botao-proximo:hover{
+    transform: scale(1.1);
+    right: 8%;
+}
+
+.confirmationModal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 82, 4, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-pequeno{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  .modal-pequeno p {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+
+#tutorial{
+    width: 18rem;
+    height: 18rem;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+
+.confirmationModal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 82, 4, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-pequeno{
+    background: #92d24a;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 3rem;
+    z-index: 3;
+    animation: fadeIn 1s;
+    word-spacing: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+  .modal-pequeno p {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .botoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  
+
+    #confirmYes,
+    #confirmNo {
+    color: #fff;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    border: 2.5px solid #074c05;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 0.8rem;
+    text-transform: uppercase;
+    background: transparent;
+    }
+
+    #confirmYes:hover,
+    #confirmNo:hover {
+    background-clip: border-box;
+    background-size: 100% auto;
+    }
+
+    #confirmYes:hover {
+    background-color: #d94545;
+    }
+
+    #confirmNo:hover {
+    background-color: #114f0f;
+    }
+
+
+@media(max-width: 1480px){
+    .botao-inicial{ 
+        top: 2%;
+        left: 2%;
+        width: 12%;
+        justify-content: space-between;
+        height: 4rem;
+     }
+    
+     #inicio, #som {
+        width: auto;
+        height: 4rem;
+      }
+      .dialogo{
+        width: 85%;
+        height: 22%;
+        bottom: 3%;
+        font-size: 1.1rem;
+        font-weight: 700;
+        word-spacing: 0px;
+      }
+      .texto{
+        padding: 2px;
+        width: 95%;
+        height: 100%;
+    }
+    #botao-proximo{
+        width: 12rem;
+        height: 3rem;
+        padding: 0px 10px;
+        right: 7.5%;
+        bottom: 28%;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    #botao-proximo > img{
+        width: 1.5rem;
+        height: 1.2rem;
+    }
+    #personagem{
+        width: 25rem;
+        height: 33rem;
+        left:-1%;
+        bottom: -1%;
+    }
+    #personagem2{
+        width: 25rem;
+        height: 35rem;
+        left:0%;
+        bottom: -1%;
+    }
+    #ilha{
+        width: 25rem;
+        height: 25rem;
+        top: 0%;
+        right: 20%;
+        z-index: 90;
+    } 
+    #tutorial{
+        width: 25rem;
+        height: 25rem;
+        top: 5%;
+        right: 30%;
+    } 
+
+    .modal-pequeno {
+        width: 60%;
+        height: 30%;
+      }
+    
+      .modal-pequeno p {
+        font-size: 1.4rem;
+      }
+      #confirmYes,
+      #confirmNo {
+        font-size: 1.2rem;
+        padding: 0.25rem 1.5rem;
+        
+      }
+}
+
+  @media(max-width: 390px){
+    .botao-inicial{ 
+        top: 2%;
+        left: 2%;
+        width: 25%;
+        justify-content: space-between;
+        height: 2.5rem;
+     }
+    
+     #inicio, #som {
+        width: auto;
+        height: 2.5rem;
+      }
+      .dialogo{
+        width: 95%;
+        height: 18%;
+        bottom: 3%;
+        font-size: 0.60rem;
+        font-weight: 700;
+        word-spacing: 0px;
+      }
+      .texto{
+        padding: 2px;
+        width: 95%;
+        height: 100%;
+    }
+    #botao-proximo{
+        width: 6rem;
+        height: 2rem;
+        padding: 0px 5px;
+        right: 3%;
+        bottom: 24%;
+        font-size: 0.65rem;
+        font-weight: 600;
+    }
+
+    #botao-proximo > img{
+        width: 1rem;
+        height: 0.75rem;
+    }
+    #personagem{
+        position: absolute;
+        width: 15rem;
+        height: 20rem;
+        left: -2%;
+        bottom: 18%;
+    }
+    #personagem2{
+        width: 12rem;
+        height: 20rem;
+        left: 0%;
+        bottom: 18%;
+    }
+    #ilha{
+        width: 15rem;
+        height: 15rem;
+        top: 3%;
+        right: 2%;
+        z-index: 90;
+    }
+}
+ 
+@media(max-width: 350px){
+    .botao-inicial{ 
+        top: 2%;
+        left: 2%;
+        width: 25%;
+        justify-content: space-between;
+        height: 2rem;
+     }
+    
+     #inicio, #som {
+        width: auto;
+        height: 2rem;
+      }
+      .dialogo{
+        width: 85%;
+        height: 18%;
+        bottom: 3%;
+        font-size: 0.38rem;
+        font-weight: 700;
+        word-spacing: 0px;
+      }
+      .texto{
+        padding: 2px;
+        width: 95%;
+        height: 100%;
+    }
+    #botao-proximo{
+        width: 4.5rem;
+        height: 1.2rem;
+        padding: 0px 5px;
+        right: 7.6%;
+        bottom: 22%;
+        font-size: 0.45rem;
+        font-weight: 600;
+    }
+
+    #botao-proximo > img{
+        width: 1rem;
+        height: 0.5rem;
+    }
+    #personagem{
+        width: 10rem;
+        height: 25rem;
+        left: 0%;
+        bottom: 1%;
+    }
+    #personagem2{
+        width: 10rem;
+        height: 15rem;
+        left: 0%;
+        bottom: 18%;
+    }
+    #ilha{
+        width: 10rem;
+        height: 10rem;
+        top: 1%;
+        top: 10%;
+        right: 8%;
+        z-index: 90;
+    }
+}

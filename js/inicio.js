@@ -10,8 +10,7 @@ function inicar() {
 }
 
 function jogar(){
-    console.log("oiii")
-    window.location.href = "tela 1.html";
+    window.location.href = "tela1.html";
 }
 
 window.onload = function() {
