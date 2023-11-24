@@ -9,6 +9,8 @@
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
+  user-select: none;
+  cursor: crosshair;
 }
 
 body{
@@ -30,13 +32,13 @@ body{
     height: 5rem;
  }
 
- #inicio, #som {
+ #inicio{
     width: 5rem;
     height: 5rem;
     transition: all 500ms ease;
   }
   
-  #inicio:hover, #som:hover {
+  #inicio:hover{
     transform: scale(1.2);
   }
 
@@ -85,11 +87,6 @@ span{
     z-index: 150;
     word-spacing: 2px;
     border-radius: 4px;
-}
-
- .dialogo::after{
-    background-color: var(--Gradiente, linear-gradient(94deg, rgba(127, 203, 40, 0.91) 7.79%, #5C9E32 96.33%));
-
 }
  
 .texto{
@@ -262,7 +259,7 @@ p{
         height: 4rem;
      }
     
-     #inicio, #som {
+     #inicio{
         width: auto;
         height: 4rem;
       }
@@ -334,7 +331,89 @@ p{
         
       }
 }
+  @media(max-width: 560px){
+    .botao-inicial{ 
+      top: 2%;
+      left: 2%;
+      width: 25%;
+      justify-content: space-between;
+      height: 2.5rem;
+   }
+  
+   #inicio{
+      width: auto;
+      height: 2.5rem;
+    }
+    .dialogo{
+      width: 95%;
+      height: 18%;
+      bottom: 3%;
+      font-size: 0.65rem;
+      font-weight: 700;
+      word-spacing: 0px;
+    }
+    .texto{
+      padding: 2px;
+      width: 95%;
+      height: 100%;
+  }
+  #botao-proximo{
+      width: 7rem;
+      height: 2rem;
+      padding: 0px 5px;
+      right: 3%;
+      bottom: 24%;
+      font-size: 0.65rem;
+      font-weight: 600;
+  }
 
+  #botao-proximo > img{
+      width: 1.2rem;
+      height: 0.75rem;
+  }
+  #personagem{
+      position: absolute;
+      width: 15rem;
+      height: 20rem;
+      left: -2%;
+      bottom: 18%;
+  }
+  #personagem2{
+      width: 12rem;
+      height: 20rem;
+      left: 0%;
+      bottom: 18%;
+  }
+  #ilha{
+      width: 18rem;
+      height: 18rem;
+      top: 3%;
+      right: 2%;
+      z-index: 90;
+  }
+  #tutorial{
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 3%;
+    right: -3%;
+}
+  .modal-pequeno{
+    width: 85%;
+    word-spacing: 0px;
+  }
+  .modal-pequeno > p{
+    font-size: 1.2rem;
+  }
+  .botoes {
+    width: 100%;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 1rem;
+    padding: 0.25rem 1.5rem;
+  }
+  }
   @media(max-width: 390px){
     .botao-inicial{ 
         top: 2%;
@@ -344,7 +423,7 @@ p{
         height: 2.5rem;
      }
     
-     #inicio, #som {
+     #inicio{
         width: auto;
         height: 2.5rem;
       }
@@ -362,7 +441,7 @@ p{
         height: 100%;
     }
     #botao-proximo{
-        width: 6rem;
+        width: 6.5rem;
         height: 2rem;
         padding: 0px 5px;
         right: 3%;
@@ -375,6 +454,10 @@ p{
         width: 1rem;
         height: 0.75rem;
     }
+    #botao-proximo:hover{
+      transform: scale(1.1);
+      right: 4%;
+  }
     #personagem{
         position: absolute;
         width: 15rem;
@@ -395,8 +478,52 @@ p{
         right: 2%;
         z-index: 90;
     }
+    .modal-pequeno{
+      width: 85%;
+      word-spacing: 0px;
+      padding: 8px;
+    }
+    .modal-pequeno > p{
+      font-size: 1rem;
+    }
+    .botoes {
+      width: 100%;
+    }
+    #confirmYes,
+    #confirmNo {
+      font-size: 0.8rem;
+      padding: 0.25rem 1.5rem;
+    }
 }
- 
+@media(max-width: 416px){
+  #tutorial{
+    width: 18rem;
+    height: 18rem;
+    position: absolute;
+    top: 3%;
+    right: -2%;
+}
+}
+@media(max-width:376px){
+  #tutorial{
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 2%;
+    right: -3%;
+}
+}
+
+@media(max-width:365px){
+  #tutorial{
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    top: 2%;
+    right: -4%;
+}
+}
+
 @media(max-width: 350px){
     .botao-inicial{ 
         top: 2%;
@@ -406,7 +533,7 @@ p{
         height: 2rem;
      }
     
-     #inicio, #som {
+     #inicio{
         width: auto;
         height: 2rem;
       }
@@ -414,7 +541,7 @@ p{
         width: 85%;
         height: 18%;
         bottom: 3%;
-        font-size: 0.38rem;
+        font-size: 0.40rem;
         font-weight: 700;
         word-spacing: 0px;
       }
@@ -424,7 +551,7 @@ p{
         height: 100%;
     }
     #botao-proximo{
-        width: 4.5rem;
+        width: 5rem;
         height: 1.2rem;
         padding: 0px 5px;
         right: 7.6%;
@@ -432,6 +559,10 @@ p{
         font-size: 0.45rem;
         font-weight: 600;
     }
+    #botao-proximo:hover{
+      transform: scale(1.1);
+      right: 8%;
+  }
 
     #botao-proximo > img{
         width: 1rem;
@@ -450,11 +581,34 @@ p{
         bottom: 18%;
     }
     #ilha{
-        width: 10rem;
-        height: 10rem;
+        width: 12rem;
+        height: 12rem;
         top: 1%;
-        top: 10%;
-        right: 8%;
+        right: 5%;
         z-index: 90;
+    }
+    #tutorial{
+      width: 12rem;
+      height: 12rem;
+      position: absolute;
+      top: 3%;
+      right: 0%;
+  }
+    .modal-pequeno{
+      width: 90%;
+      height: 30%;
+      word-spacing: 0px;
+      padding: 8px;
+    }
+    .modal-pequeno > p{
+      font-size: 0.8rem;
+    }
+    .botoes {
+      width: 100%;
+    }
+    #confirmYes,
+    #confirmNo {
+      font-size: 0.75rem;
+      padding: 0.25rem 1.5rem;
     }
 }
