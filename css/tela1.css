@@ -512,6 +512,9 @@ p{
     top: 2%;
     right: -3%;
 }
+  .dialogo{
+    font-size: 0.52rem;
+  }
 }
 
 @media(max-width:365px){
