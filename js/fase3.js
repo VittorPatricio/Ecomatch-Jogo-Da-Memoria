@@ -63,7 +63,7 @@ const checkEndGame = () => { //passa de fase aparecendo um modal interativo
 
 
       setTimeout(() =>  {
-        window.location.href = "#.html";
+        window.location.href = "tela4.html";
       }, 1500);
 
 

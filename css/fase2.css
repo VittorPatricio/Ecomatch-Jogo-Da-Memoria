@@ -419,6 +419,10 @@ header{
     width: 6%;
     height: 10%;
   }
+  .modal-menor-finalizacao{
+    height: 45%;
+    width: 60%;
+  }
 }
 
 @media (max-width:1285px){

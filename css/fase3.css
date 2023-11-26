@@ -420,7 +420,8 @@ header{
     height: 10%;
   }
   .modal-menor-finalizacao{
-    height: 48%;
+    height: 50%;
+    width: 60%;
   }
 }
 
