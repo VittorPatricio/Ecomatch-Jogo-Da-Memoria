@@ -946,10 +946,10 @@ p {
     z-index: 90;
   }
   #tutorial {
-    width: 16rem;
-    height: 16rem;
+    width: 14.4rem;
+    height: 14.4rem;
     position: absolute;
-    top: 2%;
+    top: 1%;
     right: 0%;
   }
   .modal-pequeno {
