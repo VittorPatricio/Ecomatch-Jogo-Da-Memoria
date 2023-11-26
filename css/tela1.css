@@ -415,7 +415,7 @@ p {
     width: 25rem;
     height: 25rem;
     top: 5%;
-    right: 30%;
+    right: 25%;
   }
 
   .modal-pequeno {
@@ -433,7 +433,7 @@ p {
   }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1290px) {
   .botao-inicial {
     top: 2%;
     left: 2%;
