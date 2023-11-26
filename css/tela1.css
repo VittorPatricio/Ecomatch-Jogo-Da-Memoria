@@ -582,10 +582,10 @@ p {
     bottom: 17%;
   }
   #personagem2 {
-    width: 12rem;
-    height: 20rem;
-    left: 4%;
-    bottom: 18%;
+    width: 15rem;
+    height: 30rem;
+    left: 6%;
+    bottom: 20%;
   }
   #ilha {
     width: 26rem;
@@ -595,11 +595,11 @@ p {
     z-index: 90;
   }
   #tutorial {
-    width: 18rem;
-    height: 18rem;
+    width: 27rem;
+    height: 27rem;
     position: absolute;
-    top: 3%;
-    right: 0%;
+    top: 2%;
+    right: 3%;
   }
   .modal-pequeno {
     width: 85%;
@@ -608,15 +608,15 @@ p {
     padding: 8px;
   }
   .modal-pequeno > p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .botoes {
     width: 100%;
   }
   #confirmYes,
   #confirmNo {
-    font-size: 0.95rem;
-    padding: 0.25rem 1.5rem;
+    font-size: 1rem;
+    padding: 0.35rem 1.6rem;
     border: 2.5px solid #074c05;
   }
 }
