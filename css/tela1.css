@@ -766,23 +766,106 @@ p {
   }
 }
 
+@media(max-width: 391px){
+  .dialogo {
+    font-size: 0.63rem;
+    font-weight: 700;
+  }
+  #personagem {
+    position: absolute;
+    width: 15rem;
+    height: 18rem;
+    left: -4%;
+    bottom: 18%;
+  }
+  #personagem2 {
+    width: 12rem;
+    height: 18rem;
+    left: 2%;
+    bottom: 18%;
+  }
+  #ilha {
+    width: 16rem;
+    height: 16rem;
+    top: 3%;
+    right: 2%;
+    z-index: 90;
+  }
+  #tutorial {
+    width: 17rem;
+    height: 17rem;
+    position: absolute;
+    top: 3%;
+    right: 0%;
+  }
+}
+
 @media (max-width: 376px) {
+  .botao-inicial {
+    top: 2%;
+    left: 2%;
+    width: 25%;
+    justify-content: space-between;
+    height: 2.5rem;
+  }
+  .dialogo {
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+  #botao-proximo {
+    width: 6.5rem;
+    height: 1.75rem;
+    right: 2.5%;
+    bottom: 24%;
+    font-size: 0.65rem;
+    font-weight: 600;
+  }
+  #botao-proximo:hover {
+    transform: scale(1.1);
+    right: 3.8%;
+  }
+  #personagem {
+    position: absolute;
+    width: 14rem;
+    height: 19rem;
+    left: -1%;
+    bottom: 18%;
+  }
+  #personagem2 {
+    width: 11rem;
+    height: 19rem;
+    left: 6%;
+    bottom: 18%;
+  }
+  #ilha {
+    width: 16rem;
+    height: 16rem;
+    top: 0%;
+    right: 1%;
+    z-index: 90;
+  }
   #tutorial {
     width: 15rem;
     height: 15rem;
     position: absolute;
-    top: 2%;
-    right: -3%;
+    top: 3%;
+    right: 0%;
   }
-  #ilha {
-    width: 14.2rem;
-    height: 14.2rem;
-    top: 1%;
-    right: 1%;
-    z-index: 90;
+  .modal-pequeno {
+    width: 90%;
+    padding: 8px 4px;
   }
-  .dialogo {
-    font-size: 0.52rem;
+  .modal-pequeno > p {
+    font-size: 1rem;
+  }
+  .botoes {
+    width: 100%;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 0.75rem;
+    padding: 0.25rem 1.5rem;
+    border-radius: 10px;
   }
 }
 

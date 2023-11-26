@@ -585,6 +585,7 @@ header{
   }
   .modal-content2{
     width: 80%;
+    height: 25%;
   }
   .modal-content2 p {
     font-size: 1rem;
