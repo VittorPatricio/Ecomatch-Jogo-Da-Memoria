@@ -268,6 +268,9 @@ p {
     word-spacing: 0px;
     box-shadow: #65ab15 4px 4px, #1a6b17 8px 8px;
   }
+  span{
+    font-weight: 700;
+  }
   .texto {
     padding: 2px;
     width: 95%;
@@ -360,6 +363,9 @@ p {
     font-weight: 700;
     word-spacing: 0px;
   }
+  span{
+    font-weight: 700;
+  }
   .texto {
     padding: 2px;
     width: 95%;
@@ -447,6 +453,9 @@ p {
     font-size: 1.1rem;
     font-weight: 700;
     word-spacing: 0px;
+  }
+  span{
+    font-weight: 700;
   }
   .texto {
     padding: 2px;
@@ -538,6 +547,9 @@ p {
     box-shadow: #65ab15 2px 2px, #1a6b17 4px 4px;
     user-select: none;
   }
+  span{
+    font-weight: 700;
+  }
   .texto {
     padding: 2px;
     width: 95%;
@@ -614,6 +626,9 @@ p {
     font-size: 0.68rem;
     font-weight: 700;
     word-spacing: 0px;
+  }
+  span{
+    font-weight: 700;
   }
   .texto {
     padding: 2px;
@@ -693,6 +708,9 @@ p {
     font-weight: 700;
     word-spacing: 0px;
   }
+  span{
+    font-weight: 700;
+  }
   .texto {
     padding: 2px;
     width: 95%;
@@ -771,6 +789,9 @@ p {
     font-size: 0.63rem;
     font-weight: 700;
   }
+  span{
+    font-weight: 700;
+  }
   #personagem {
     position: absolute;
     width: 15rem;
@@ -810,6 +831,9 @@ p {
   }
   .dialogo {
     font-size: 0.6rem;
+    font-weight: 600;
+  }
+  span{
     font-weight: 600;
   }
   #botao-proximo {
@@ -881,6 +905,9 @@ p {
     font-size: 0.6rem;
     font-weight: 600;
   }
+  span{
+    font-weight: 600;
+  }
   #botao-proximo {
     width: 6.5rem;
     height: 1.75rem;
@@ -912,8 +939,8 @@ p {
     bottom: 18%;
   }
   #ilha {
-    width: 14.7rem;
-    height: 14.7rem;
+    width: 15rem;
+    height: 15rem;
     top: 0%;
     right: 1%;
     z-index: 90;
@@ -963,6 +990,9 @@ p {
     font-size: 0.4rem;
     font-weight: 700;
     word-spacing: 0px;
+  }
+  span{
+    font-weight: 700;
   }
   .texto {
     padding: 2px;
