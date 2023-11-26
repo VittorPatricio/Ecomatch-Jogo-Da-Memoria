@@ -870,12 +870,76 @@ p {
 }
 
 @media (max-width: 365px) {
+  .botao-inicial {
+    top: 2%;
+    left: 2%;
+    width: 25%;
+    justify-content: space-between;
+    height: 2.5rem;
+  }
+  .dialogo {
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+  #botao-proximo {
+    width: 6.5rem;
+    height: 1.75rem;
+    right: 2.6%;
+    bottom: 24%;
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+  #botao-proximo > img{
+    width: 0.65rem;
+    height: 0.65rem;
+    padding: 0;
+  }
+  #botao-proximo:hover {
+    transform: scale(1.1);
+    right: 4%;
+  }
+  #personagem {
+    position: absolute;
+    width: 14rem;
+    height: 19rem;
+    left: -1%;
+    bottom: 18%;
+  }
+  #personagem2 {
+    width: 11rem;
+    height: 19rem;
+    left: 6%;
+    bottom: 18%;
+  }
+  #ilha {
+    width: 14.7rem;
+    height: 14.7rem;
+    top: 0%;
+    right: 1%;
+    z-index: 90;
+  }
   #tutorial {
     width: 16rem;
     height: 16rem;
     position: absolute;
     top: 2%;
-    right: -4%;
+    right: 0%;
+  }
+  .modal-pequeno {
+    width: 90%;
+    padding: 8px 4px;
+  }
+  .modal-pequeno > p {
+    font-size: 0.9rem;
+  }
+  .botoes {
+    width: 100%;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 0.75rem;
+    padding: 0.25rem 1.5rem;
+    border-radius: 10px;
   }
 }
 
@@ -910,13 +974,13 @@ p {
     height: 1.2rem;
     padding: 0px 5px;
     right: 7.6%;
-    bottom: 22%;
+    bottom: 24%;
     font-size: 0.45rem;
-    font-weight: 600;
+    font-weight: 700;
   }
   #botao-proximo:hover {
     transform: scale(1.1);
-    right: 8%;
+    right: 9%;
   }
 
   #botao-proximo > img {
@@ -926,7 +990,7 @@ p {
   #personagem {
     width: 10rem;
     height: 25rem;
-    left: 0%;
+    left: 1%;
     bottom: 1%;
   }
   #personagem2 {
@@ -936,8 +1000,8 @@ p {
     bottom: 18%;
   }
   #ilha {
-    width: 12rem;
-    height: 12rem;
+    width: 11rem;
+    height: 11rem;
     top: 1%;
     right: 5%;
     z-index: 90;
@@ -950,20 +1014,22 @@ p {
     right: 0%;
   }
   .modal-pequeno {
-    width: 90%;
+    width: 85%;
     height: 30%;
     word-spacing: 0px;
     padding: 8px;
+    position: relative;
+    bottom: 3%;
   }
   .modal-pequeno > p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
   .botoes {
     width: 100%;
   }
   #confirmYes,
   #confirmNo {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     padding: 0.25rem 1.5rem;
   }
 }
