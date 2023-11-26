@@ -395,7 +395,7 @@ p {
   #personagem {
     width: 26rem;
     height: 35rem;
-    left: -1%;
+    left: 0%;
     bottom: -1%;
   }
   #personagem2 {
