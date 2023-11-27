@@ -552,7 +552,7 @@ p {
   }
 }
 
-@media (max-width: 840px){
+@media (max-width: 900px){
   .botao-inicial {
     top: 2%;
     left: 2%;
@@ -584,12 +584,12 @@ p {
     height: 100%;
   }
   #botao-proximo {
-    width: 10rem;
+    width: 10.8rem;
     height: 2.2rem;
     padding: 0px 5px;
     right: 3%;
     bottom: 26%;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     box-shadow: #65ab15 2px 2px, #1a6b17 4px 4px;
   }
@@ -598,8 +598,8 @@ p {
     right: 4.2%;
   }
   #botao-proximo > img {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.3rem;
+    height: 1.3rem;
     padding: 0;
   }
   #personagem {
@@ -638,21 +638,125 @@ p {
   }
   .modal-pequeno {
     width: 85%;
-    height: 22%;
+    height: 18%;
     word-spacing: 0px;
     padding: 8px;
   }
   .modal-pequeno > p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .botoes {
     width: 100%;
   }
   #confirmYes,
   #confirmNo {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0.35rem 1.6rem;
-    border: 2.5px solid #074c05;
+    border: 3px solid #074c05;
+  }
+}
+
+@media (max-width: 840px){
+  .botao-inicial {
+    top: 2%;
+    left: 2%;
+    width: 25%;
+    justify-content: space-between;
+    height: 4rem;
+  }
+
+  #inicio {
+    width: auto;
+    height: 4rem;
+  }
+  .dialogo {
+    width: 95%;
+    height: 20%;
+    bottom: 3%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    word-spacing: 0px;
+    box-shadow: #65ab15 2px 2px, #1a6b17 4px 4px;
+    user-select: none;
+  }
+  span{
+    font-weight: 700;
+  }
+  .texto {
+    padding: 2px;
+    width: 95%;
+    height: 100%;
+  }
+  #botao-proximo {
+    width: 10.8rem;
+    height: 2.2rem;
+    padding: 0px 5px;
+    right: 3%;
+    bottom: 26%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    box-shadow: #65ab15 2px 2px, #1a6b17 4px 4px;
+  }
+  #botao-proximo:hover {
+    transform: scale(1.1);
+    right: 4.2%;
+  }
+  #botao-proximo > img {
+    width: 1.3rem;
+    height: 1.3rem;
+    padding: 0;
+  }
+  #personagem {
+    position: absolute;
+    width: 22rem;
+    height: 35rem;
+    left: 1%;
+    bottom: 17%;
+  }
+  #personagem2 {
+    width: 17rem;
+    height: 31rem;
+    left: 6%;
+    bottom: 20%;
+  }
+  #ilha {
+    width: 30rem;
+    height: 26rem;
+    top: 4%;
+    right: 4%;
+    z-index: 90;
+  }
+  #ilhasaudavel{
+    width: 30rem;
+    height: 24rem;
+    top: 8%;
+    right: 6%;
+    z-index: 90;
+  }
+  #tutorial {
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+  }
+  .modal-pequeno {
+    width: 85%;
+    height: 18%;
+    word-spacing: 0px;
+    padding: 8px;
+  }
+  .modal-pequeno > p {
+    font-size: 1.5rem;
+  }
+  .botoes {
+    width: 100%;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 1.2rem;
+    padding: 0.35rem 1.6rem;
+    border: 3px solid #074c05;
   }
 }
 
@@ -730,7 +834,7 @@ p {
   }
   .modal-pequeno {
     width: 85%;
-    height: 22%;
+    height: 18%;
     word-spacing: 0px;
     padding: 8px;
   }
