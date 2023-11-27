@@ -320,9 +320,9 @@ p {
     bottom: -1%;
   }
   #ilha {
-    width: 35rem;
-    height: 35rem;
-    top: -2%;
+    width: 28rem;
+    height: 28rem;
+    top: 2%;
     right: 20%;
     z-index: 90;
   }
