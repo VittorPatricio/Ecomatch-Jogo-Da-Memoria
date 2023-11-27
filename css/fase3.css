@@ -610,7 +610,7 @@ header{
 @media (max-width: 416px){
   .card{
     width: 100%;
-    height: 78%;
+    height: 72%;
 }
   .grid{
     margin-top: 30%;
