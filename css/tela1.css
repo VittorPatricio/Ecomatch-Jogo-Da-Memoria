@@ -419,9 +419,9 @@ p {
     bottom: -1%;
   }
   #ilha {
-    width: 27rem;
-    height: 27rem;
-    top: 0%;
+    width: 28rem;
+    height: 22rem;
+    top: 6%;
     right: 20%;
     z-index: 90;
   }
