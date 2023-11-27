@@ -256,6 +256,7 @@ header{
 }
 
 .modal-content2 p {
+  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -298,8 +299,7 @@ header{
   #body {
     padding: 4% 0% 2% 0%;
     background-position: bottom;
-    background-position-y: 80%;
-    background-size: 105%;
+    background-size: 100%;
   }
   header{
     top: 4.5%;
@@ -396,7 +396,7 @@ header{
   #confirmNo {
     font-size: 1.2rem;
     padding: 0.25rem 1.5rem;
-    border: 2.5px solid #4c1d05;
+    border: 2.5px solid  #4c1d05;
   }
   
   .texto-fase-inicio{
@@ -420,7 +420,7 @@ header{
     height: 10%;
   }
   .modal-menor-finalizacao{
-    height: 50%;
+    height: 45%;
     width: 60%;
   }
 }
@@ -462,12 +462,12 @@ header{
     gap: 2%;
   }
   .card{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     margin-top: 5%;
   }
   .modal-menor-finalizacao{
-    height: 38%;
+    height: 35%;
     width: 70%;
   }
   .modal-content2 p{
@@ -560,11 +560,76 @@ header{
     height:80%;
     gap: 2%;
     padding: 0%;
-    margin-top: 18%;
+    margin-top: 16%;
   }
   .card{
     width: 100%;
-    height: 75%;
+    height: 70%;
+  }
+  .texto-fase-inicio {
+    width: 75%;
+    height: 12%;
+  }
+  .texto-fase-inicio > p {
+    font-size: 1.7rem;
+}
+  .botao-inicial {
+    top: 5%;
+    left: 5%;
+    width: 12%;
+    height: 8%;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 1.2rem;
+    border: 2.2px solid #4c1d05;
+  }
+  .modal-content2{
+    width: 80%;
+    height: 25%;
+  }
+  .modal-content2 p {
+    font-size: 1rem;
+  }
+  .botoes{
+    width: 100%;
+  }
+  .modal-menor-finalizacao{
+    width: 90%;
+    height: 30%;
+  }
+  .modal-menor-finalizacao > p{
+    font-size: 1.2rem;
+  }
+  .spinner{
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 430px){
+    #body{
+    padding: 15% 5% 10% 5%;
+  }
+  header{
+    top: 14%;
+    right: auto;
+    padding: 5%;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    height: 8%;
+    align-items: center;
+    width: 92%;
+  }
+  .grid{
+    height:80%;
+    gap: 2%;
+    padding: 0%;
+    margin-top: 16%;
+  }
+  .card{
+    width: 100%;
+    height: 70%;
   }
   .texto-fase-inicio {
     width: 75%;
@@ -586,7 +651,6 @@ header{
   }
   .modal-content2{
     width: 80%;
-    height: 25%;
   }
   .modal-content2 p {
     font-size: 1rem;
@@ -596,35 +660,36 @@ header{
   }
   .modal-menor-finalizacao{
     width: 90%;
-    height: 35%;
+    height: 30%;
   }
   .modal-menor-finalizacao > p{
     font-size: 1.2rem;
   }
   .spinner{
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
   }
 }
 
 @media (max-width: 416px){
   .card{
     width: 100%;
-    height: 72%;
+    height: 70%;
 }
   .grid{
-    margin-top: 30%;
+    margin-top: 25%;
+    height:80%;
   }
   .modal-menor-finalizacao{
     width: 90%;
-    height: 35%;
+    height: 30%;
   }
   .modal-menor-finalizacao > p{
     font-size: 1.2rem;
   }
   .spinner{
-    width: 37px;
-    height: 37px;
+    width: 42px;
+    height: 42px;
   }
   .texto-fase-inicio > p {
     font-size: 1.7rem;
@@ -652,27 +717,27 @@ header{
     right: auto;
   }
   .grid{
-    height: 100%;
+    height: 80%;
     gap: 1%;
-    margin-top: 28%;
+    margin-top: 22%;
   }
   .botao-inicial{
     top: 2%;
   }
   .card{
     width: 100%;
-    height: 68%
+    height: 66%
   }
   .modal-menor-finalizacao{
     width: 90%;
-    height: 35%;
+    height: 30%;
   }
   .modal-menor-finalizacao > p{
     font-size: 1.2rem;
   }
   .spinner{
-    width: 36px;
-    height: 36px;
+    width: 42px;
+    height: 42px;
   }
   .texto-fase-inicio > p {
     font-size: 1.6rem;
@@ -691,16 +756,35 @@ header{
   }
 }
 @media (max-width: 392px){
+  .grid{
+  height: 80%;
+  }
   .card{
     width: 100%;
-    height: 78%
+    height: 67%
   }
   .texto-fase-inicio > p {
     font-size: 1.5rem;
   }
   .modal-menor-finalizacao{
     width: 90%;
-    height: 35%;
+  }
+  .modal-menor-finalizacao > p{
+    font-size: 1.2rem;
+  }
+  .spinner{
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (max-width: 380px){
+  .card{
+    width: 100%;
+    height: 78%;
+  }
+  .modal-menor-finalizacao{
+    width: 90%;
+    height: 32%;
   }
   .modal-menor-finalizacao > p{
     font-size: 1.2rem;
@@ -710,31 +794,17 @@ header{
     height: 35px;
   }
 }
-@media (max-width: 380px){
-  .card{
-    width: 100%;
-    height: 80%;
-  }
-  .modal-menor-finalizacao{
-    width: 90%;
-    height: 35%;
-  }
-  .modal-menor-finalizacao > p{
-    font-size: 1.2rem;
-  }
-  .spinner{
-    width: 34px;
-    height: 34px;
-  }
-}
 @media (max-width: 360px){
+  .grid{
+  height:80%;
+  }
   .card{
     width: 100%;
-    height: 63.5%;
+    height: 68%;
    }
    .modal-menor-finalizacao{
     width: 85%;
-    height: 35%;
+    height: 32%;
   }
 }
 
@@ -761,15 +831,15 @@ header{
   font-size: 1rem;
 }
 .modal-menor-finalizacao{
-  height: 35%;
+  height: 40%;
   width: 85%;
 }
 .modal-menor-finalizacao > p{
   font-size: 1rem;
 }
 .spinner{
-  height: 33px;
-  width: 33px;
+  height: 35px;
+  width: 35px;
 }
 .modal-content2{
   height: 30%;
