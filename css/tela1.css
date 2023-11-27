@@ -66,7 +66,14 @@ main {
   right: 10%;
   z-index: 90;
 }
-
+#ilhasaudavel{
+  width: 40rem;
+  height: 40rem;
+  position: absolute;
+  top: 1%;
+  right: 10%;
+  z-index: 90;
+}
 span {
   color: #1a6b17;
 }
@@ -319,6 +326,13 @@ p {
     right: 20%;
     z-index: 90;
   }
+  #ilhasaudavel{
+    width: 35rem;
+    height: 26rem;
+    top: 5%;
+    right: 15%;
+    z-index: 90;
+  }
   #tutorial {
     width: 30rem;
     height: 30rem;
@@ -405,10 +419,17 @@ p {
     bottom: -1%;
   }
   #ilha {
-    width: 25rem;
-    height: 25rem;
+    width: 27rem;
+    height: 27rem;
     top: 0%;
     right: 20%;
+    z-index: 90;
+  }
+  #ilhasaudavel{
+    width: 32rem;
+    height: 22rem;
+    top: 5%;
+    right: 16%;
     z-index: 90;
   }
   #tutorial {
@@ -502,6 +523,13 @@ p {
     right: 10%;
     z-index: 90;
   }
+  #ilhasaudavel{
+    width: 26rem;
+    height: 20rem;
+    top: 5%;
+    right: 6%;
+    z-index: 90;
+  }
   #tutorial {
     width: 28rem;
     height: 28rem;
@@ -524,7 +552,7 @@ p {
   }
 }
 
-@media (max-width: 780px){
+@media (max-width: 840px){
   .botao-inicial {
     top: 2%;
     left: 2%;
@@ -537,6 +565,98 @@ p {
     width: auto;
     height: 4rem;
   }
+  .dialogo {
+    width: 95%;
+    height: 20%;
+    bottom: 3%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    word-spacing: 0px;
+    box-shadow: #65ab15 2px 2px, #1a6b17 4px 4px;
+    user-select: none;
+  }
+  span{
+    font-weight: 700;
+  }
+  .texto {
+    padding: 2px;
+    width: 95%;
+    height: 100%;
+  }
+  #botao-proximo {
+    width: 10rem;
+    height: 2.2rem;
+    padding: 0px 5px;
+    right: 3%;
+    bottom: 26%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: #65ab15 2px 2px, #1a6b17 4px 4px;
+  }
+  #botao-proximo:hover {
+    transform: scale(1.1);
+    right: 4.2%;
+  }
+  #botao-proximo > img {
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: 0;
+  }
+  #personagem {
+    position: absolute;
+    width: 22rem;
+    height: 35rem;
+    left: 1%;
+    bottom: 17%;
+  }
+  #personagem2 {
+    width: 17rem;
+    height: 31rem;
+    left: 6%;
+    bottom: 20%;
+  }
+  #ilha {
+    width: 30rem;
+    height: 26rem;
+    top: 4%;
+    right: 4%;
+    z-index: 90;
+  }
+  #ilhasaudavel{
+    width: 30rem;
+    height: 24rem;
+    top: 8%;
+    right: 6%;
+    z-index: 90;
+  }
+  #tutorial {
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+  }
+  .modal-pequeno {
+    width: 85%;
+    height: 22%;
+    word-spacing: 0px;
+    padding: 8px;
+  }
+  .modal-pequeno > p {
+    font-size: 1.3rem;
+  }
+  .botoes {
+    width: 100%;
+  }
+  #confirmYes,
+  #confirmNo {
+    font-size: 1rem;
+    padding: 0.35rem 1.6rem;
+    border: 2.5px solid #074c05;
+  }
+}
+
+@media (max-width: 780px){
   .dialogo {
     width: 95%;
     height: 20%;
@@ -592,6 +712,13 @@ p {
     height: 26rem;
     top: 3%;
     right: 2%;
+    z-index: 90;
+  }
+  #ilhasaudavel{
+    width: 26rem;
+    height: 21rem;
+    top: 6%;
+    right: 6%;
     z-index: 90;
   }
   #tutorial {
@@ -690,6 +817,13 @@ p {
     right: 2%;
     z-index: 90;
   }
+  #ilhasaudavel{
+    width: 18rem;
+    height: 14rem;
+    top: 8%;
+    right: 4%;
+    z-index: 90;
+  }
   #tutorial {
     width: 18rem;
     height: 18rem;
@@ -776,6 +910,13 @@ p {
     right: 2%;
     z-index: 90;
   }
+  #ilhasaudavel{
+    width: 18rem;
+    height: 14.5rem;
+    top: 5%;
+    right: 4%;
+    z-index: 90;
+  }
   #tutorial {
     width: 16rem;
     height: 16rem;
@@ -848,6 +989,13 @@ p {
     height: 18rem;
     top: 3%;
     right: 2%;
+    z-index: 90;
+  }
+  #ilhasaudavel{
+    width: 19rem;
+    height: 16rem;
+    top: 5%;
+    right: 4%;
     z-index: 90;
   }
   #tutorial {
@@ -936,6 +1084,13 @@ p {
     right: 2%;
     z-index: 90;
   }
+  #ilhasaudavel{
+    width: 18rem;
+    height: 14rem;
+    top: 6%;
+    right: 4%;
+    z-index: 90;
+  }
   #tutorial {
     width: 17rem;
     height: 17rem;
@@ -975,6 +1130,7 @@ p {
   }
   span{
     font-weight: 700;
+  
   }
   #personagem {
     position: absolute;
@@ -994,6 +1150,13 @@ p {
     height: 16rem;
     top: 3%;
     right: 2%;
+    z-index: 90;
+  }
+  #ilhasaudavel{
+    width: 18rem;
+    height: 14rem;
+    top: 6%;
+    right: 4%;
     z-index: 90;
   }
   #tutorial {
@@ -1057,6 +1220,13 @@ p {
     height: 16rem;
     top: 0%;
     right: 1%;
+    z-index: 90;
+  }
+  #ilhasaudavel{
+    width: 16rem;
+    height: 12rem;
+    top: 6%;
+    right: 4%;
     z-index: 90;
   }
   #tutorial {
@@ -1136,6 +1306,13 @@ p {
     height: 15rem;
     top: 0%;
     right: 1%;
+    z-index: 90;
+  }
+  #ilhasaudavel{
+    width: 15rem;
+    height: 12rem;
+    top: 6%;
+    right: 4%;
     z-index: 90;
   }
   #tutorial {
@@ -1227,6 +1404,13 @@ p {
     height: 11rem;
     top: 1%;
     right: 5%;
+    z-index: 90;
+  }
+  #ilhasaudavel{
+    width: 12rem;
+    height: 10rem;
+    top: 6%;
+    right: 4%;
     z-index: 90;
   }
   #tutorial {
