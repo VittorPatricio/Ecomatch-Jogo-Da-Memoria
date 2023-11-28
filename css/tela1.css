@@ -23,7 +23,6 @@ body {
 .botao-inicial {
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
   position: fixed;
   top: 2%;
   left: 2%;
