@@ -48,14 +48,14 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const imagensAnimais = {
-    Capivara: "/img/Capivara.svg",
-    Tucano: "/img/tucano.svg",
-    Onça: "/img/onça.svg",
-    Garça: "/img/garça.svg",
-    Cervo: "/img/cervo.svg",
-    Tatu: "/img/tatu.svg",
-    Arara: "/img/arara.svg",
-    Camaleão: "/img/camaleão.svg",
+    Capivara: "../img/Capivara.svg",
+    Tucano: "../img/tucano.svg",
+    Onça: "../img/onça.svg",
+    Garça: "../img/garça.svg",
+    Cervo: "../img/cervo.svg",
+    Tatu: "../img/tatu.svg",
+    Arara: "../img/arara.svg",
+    Camaleão: "../img/camaleão.svg",
     // Adicione mais caminhos de imagem conforme necessário
   };
 
