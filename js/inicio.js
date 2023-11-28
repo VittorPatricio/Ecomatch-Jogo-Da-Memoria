@@ -10,7 +10,7 @@ function inicar() {
 }
 
 function jogar(){
-    window.location.href = "tela1.html";
+    window.location.href = "ecoguardia.html";
 }
 
 window.onload = function() {
