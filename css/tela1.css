@@ -858,12 +858,12 @@ p {
     left: 2%;
     width: 25%;
     justify-content: space-between;
-    height: 2.5rem;
+    height: 3.2rem;
   }
 
   #inicio {
     width: auto;
-    height: 2.5rem;
+    height: 3.2rem;
   }
   .dialogo {
     width: 95%;
@@ -903,21 +903,21 @@ p {
   }
   #personagem {
     position: absolute;
-    width: 15rem;
-    height: 20rem;
+    width: 17rem;
+    height: 23rem;
     left: -2%;
     bottom: 18%;
   }
   #personagem2 {
-    width: 12rem;
-    height: 20rem;
-    left: 4%;
+    width: 17rem;
+    height: 23rem;
+    left: 0%;
     bottom: 18%;
   }
   #ilha {
     width: 18rem;
-    height: 18rem;
-    top: 3%;
+    height: 14rem;
+    top: 5%;
     right: 2%;
     z-index: 90;
   }
@@ -929,8 +929,8 @@ p {
     z-index: 90;
   }
   #tutorial {
-    width: 18rem;
-    height: 18rem;
+    width: 16.8rem;
+    height: 16.8rem;
     position: absolute;
     top: 3%;
     right: 0%;
