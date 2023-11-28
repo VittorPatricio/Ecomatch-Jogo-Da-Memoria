@@ -59,19 +59,19 @@ main {
 }
 
 #ilha {
-  width: 40rem;
-  height: 40rem;
+  width: 42rem;
+  height: 32rem;
   position: absolute;
-  top: 1%;
-  right: 10%;
+  top: 5%;
+  right: 20%;
   z-index: 90;
 }
 #ilhasaudavel{
-  width: 40rem;
-  height: 40rem;
+  width: 42rem;
+  height: 32rem;
   position: absolute;
-  top: 1%;
-  right: 10%;
+  top: 5%;
+  right: 20%;
   z-index: 90;
 }
 span {
@@ -111,7 +111,7 @@ p {
 }
 
 #botao-proximo {
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   text-align: center;
   border-radius: 15px 35px;
   background-color: #fff;
@@ -133,37 +133,12 @@ p {
   right: 8%;
 }
 
-.confirmationModal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(11, 82, 4, 0.5);
-  z-index: 1000;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-pequeno {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-}
-
-.modal-pequeno p {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 #tutorial {
-  width: 18rem;
-  height: 18rem;
+  width: 38rem;
+  height: 38rem;
   position: absolute;
-  top: 2%;
-  right: 2%;
+  top: 4%;
+  right: 25%;
 }
 
 @keyframes fadeIn {
@@ -203,7 +178,7 @@ p {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8rem;
   z-index: 3;
   animation: fadeIn 1s;
   word-spacing: 0.4rem;
@@ -211,6 +186,8 @@ p {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  width: 90%;
+  height: 35%;
 }
 
 .modal-pequeno p {
@@ -230,7 +207,9 @@ p {
   color: #fff;
   animation: textclip 3s linear infinite;
   display: inline-block;
-  border: 2.5px solid #074c05;
+  border: 2.8px solid #074c05;
+  padding: 0px 2rem;
+  font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
   transition: 1s;
