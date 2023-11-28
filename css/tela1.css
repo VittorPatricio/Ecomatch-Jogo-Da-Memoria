@@ -513,28 +513,28 @@ p {
   #personagem2 {
     width: 25rem;
     height: 35rem;
-    left: 0%;
+    left: 2%;
     bottom: 16%;
   }
   #ilha {
-    width: 25rem;
-    height: 25rem;
-    top: 0%;
-    right: 10%;
+    width: 30rem;
+    height: 22rem;
+    top: 5%;
+    right: 12%;
     z-index: 90;
   }
   #ilhasaudavel{
-    width: 26rem;
-    height: 20rem;
+    width: 30rem;
+    height: 22rem;
     top: 5%;
-    right: 6%;
+    right: 12%;
     z-index: 90;
   }
   #tutorial {
-    width: 28rem;
-    height: 28rem;
+    width: 30rem;
+    height: 30rem;
     top: 2%;
-    right: 8%;
+    right: 20%;
   }
 
   .modal-pequeno {
@@ -617,14 +617,14 @@ p {
   }
   #ilha {
     width: 30rem;
-    height: 26rem;
-    top: 4%;
-    right: 4%;
+    height: 23rem;
+    top: 6%;
+    right: 6%;
     z-index: 90;
   }
   #ilhasaudavel{
     width: 30rem;
-    height: 24rem;
+    height: 23rem;
     top: 8%;
     right: 6%;
     z-index: 90;
@@ -708,22 +708,22 @@ p {
   }
   #personagem {
     position: absolute;
-    width: 22rem;
-    height: 35rem;
+    width: 24rem;
+    height: 38rem;
     left: 1%;
     bottom: 17%;
   }
   #personagem2 {
-    width: 17rem;
-    height: 31rem;
+    width: 19rem;
+    height: 34rem;
     left: 6%;
     bottom: 20%;
   }
   #ilha {
     width: 30rem;
-    height: 26rem;
-    top: 4%;
-    right: 4%;
+    height: 24rem;
+    top: 5%;
+    right: 5%;
     z-index: 90;
   }
   #ilhasaudavel{
@@ -734,8 +734,8 @@ p {
     z-index: 90;
   }
   #tutorial {
-    width: 30rem;
-    height: 30rem;
+    width: 29rem;
+    height: 29rem;
     position: absolute;
     top: 3%;
     right: 3%;
@@ -812,14 +812,14 @@ p {
     bottom: 20%;
   }
   #ilha {
-    width: 26rem;
-    height: 26rem;
-    top: 3%;
-    right: 2%;
+    width: 27rem;
+    height: 22rem;
+    top: 6%;
+    right: 6%;
     z-index: 90;
   }
   #ilhasaudavel{
-    width: 26rem;
+    width: 27rem;
     height: 21rem;
     top: 6%;
     right: 6%;
@@ -905,13 +905,13 @@ p {
     position: absolute;
     width: 17rem;
     height: 23rem;
-    left: -2%;
+    left: -1%;
     bottom: 18%;
   }
   #personagem2 {
     width: 17rem;
     height: 23rem;
-    left: 0%;
+    left: 1%;
     bottom: 18%;
   }
   #ilha {
@@ -1009,23 +1009,23 @@ p {
   }
   #ilha {
     width: 17rem;
-    height: 17rem;
+    height: 13rem;
     top: 3%;
-    right: 2%;
+    right: 4%;
     z-index: 90;
   }
   #ilhasaudavel{
-    width: 18rem;
-    height: 14.5rem;
-    top: 5%;
+    width: 17rem;
+    height: 13rem;
+    top: 3%;
     right: 4%;
     z-index: 90;
   }
   #tutorial {
-    width: 16rem;
-    height: 16rem;
+    width: 15rem;
+    height: 15rem;
     position: absolute;
-    top: 3%;
+    top: 2%;
     right: 0%;
   }
   .modal-pequeno {
@@ -1090,23 +1090,23 @@ p {
   }
   #ilha {
     width: 18rem;
-    height: 18rem;
-    top: 3%;
-    right: 2%;
+    height: 14rem;
+    top: 6%;
+    right: 4%;
     z-index: 90;
   }
   #ilhasaudavel{
-    width: 19rem;
-    height: 16rem;
-    top: 5%;
+    width: 18rem;
+    height: 14rem;
+    top: 6%;
     right: 4%;
     z-index: 90;
   }
   #tutorial {
-    width: 18rem;
-    height: 18rem;
+    width: 17rem;
+    height: 17rem;
     position: absolute;
-    top: 3%;
+    top: 2%;
     right: 0%;
   }
   .modal-pequeno {
@@ -1122,12 +1122,12 @@ p {
     left: 2%;
     width: 25%;
     justify-content: space-between;
-    height: 2.5rem;
+    height: 3rem;
   }
 
   #inicio {
     width: auto;
-    height: 2.5rem;
+    height: 3rem;
   }
   .dialogo {
     width: 95%;
@@ -1170,20 +1170,20 @@ p {
   }
   #personagem {
     position: absolute;
-    width: 15rem;
-    height: 20rem;
-    left: -2%;
+    width: 16rem;
+    height: 22rem;
+    left: -1%;
     bottom: 18%;
   }
   #personagem2 {
-    width: 12rem;
-    height: 20rem;
-    left: 0%;
+    width: 16rem;
+    height: 22rem;
+    left: 1%;
     bottom: 18%;
   }
   #ilha {
-    width: 17rem;
-    height: 17rem;
+    width: 18rem;
+    height: 14rem;
     top: 3%;
     right: 2%;
     z-index: 90;
@@ -1199,7 +1199,7 @@ p {
     width: 17rem;
     height: 17rem;
     position: absolute;
-    top: 3%;
+    top: 1.2%;
     right: 0%;
   }
   .modal-pequeno {
@@ -1228,6 +1228,18 @@ p {
 }
 
 @media(max-width: 391px){
+  .botao-inicial {
+    top: 2%;
+    left: 2%;
+    width: 25%;
+    justify-content: space-between;
+    height: 3rem;
+  }
+
+  #inicio {
+    width: auto;
+    height: 3rem;
+  }
   .dialogo {
     font-size: 0.63rem;
     font-weight: 700;
@@ -1238,36 +1250,36 @@ p {
   }
   #personagem {
     position: absolute;
-    width: 15rem;
-    height: 18rem;
-    left: -4%;
+    width: 16rem;
+    height: 20rem;
+    left: -3%;
     bottom: 18%;
   }
   #personagem2 {
-    width: 12rem;
-    height: 18rem;
-    left: 2%;
+    width: 16rem;
+    height: 20rem;
+    left: -3%;
     bottom: 18%;
   }
   #ilha {
-    width: 16rem;
-    height: 16rem;
-    top: 3%;
+    width: 17rem;
+    height: 13rem;
+    top: 4%;
     right: 2%;
     z-index: 90;
   }
   #ilhasaudavel{
-    width: 18rem;
-    height: 14rem;
-    top: 6%;
-    right: 4%;
+    width: 17rem;
+    height: 13rem;
+    top: 4%;
+    right: 2%;
     z-index: 90;
   }
   #tutorial {
-    width: 17rem;
-    height: 17rem;
+    width: 15.5rem;
+    height: 15.5rem;
     position: absolute;
-    top: 3%;
+    top: 1.5%;
     right: 0%;
   }
   .modal-pequeno {
@@ -1285,7 +1297,10 @@ p {
     left: 2%;
     width: 25%;
     justify-content: space-between;
-    height: 2.5rem;
+    height: 2.8rem;
+  }
+  #inicio{
+    height: 2.8rem;
   }
   .dialogo {
     font-size: 0.6rem;
@@ -1308,37 +1323,37 @@ p {
   }
   #personagem {
     position: absolute;
-    width: 14rem;
-    height: 19rem;
-    left: -1%;
+    width: 15rem;
+    height: 20rem;
+    left: 0%;
     bottom: 18%;
   }
   #personagem2 {
-    width: 11rem;
-    height: 19rem;
-    left: 6%;
+    width: 12rem;
+    height: 20rem;
+    left: 7%;
     bottom: 18%;
   }
   #ilha {
     width: 16rem;
-    height: 16rem;
-    top: 0%;
-    right: 1%;
+    height: 12rem;
+    top: 4%;
+    right: 2%;
     z-index: 90;
   }
   #ilhasaudavel{
     width: 16rem;
     height: 12rem;
-    top: 6%;
+    top: 4%;
     right: 4%;
     z-index: 90;
   }
   #tutorial {
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
     position: absolute;
-    top: 3%;
-    right: 0%;
+    top: 2%;
+    right: 2%;
   }
   .modal-pequeno {
     width: 90%;
@@ -1396,19 +1411,19 @@ p {
     position: absolute;
     width: 14rem;
     height: 19rem;
-    left: -1%;
+    left: 0%;
     bottom: 18%;
   }
   #personagem2 {
     width: 11rem;
     height: 19rem;
-    left: 6%;
+    left: 5%;
     bottom: 18%;
   }
   #ilha {
     width: 15rem;
-    height: 15rem;
-    top: 0%;
+    height: 12rem;
+    top: 6%;
     right: 1%;
     z-index: 90;
   }
@@ -1416,12 +1431,12 @@ p {
     width: 15rem;
     height: 12rem;
     top: 6%;
-    right: 4%;
+    right: 2%;
     z-index: 90;
   }
   #tutorial {
-    width: 14rem;
-    height: 14rem;
+    width: 14.3rem;
+    height: 14.3rem;
     position: absolute;
     top: 1%;
     right: 0%;
@@ -1504,25 +1519,25 @@ p {
     bottom: 18%;
   }
   #ilha {
-    width: 11rem;
-    height: 11rem;
-    top: 1%;
+    width: 12rem;
+    height: 9rem;
+    top: 5%;
     right: 5%;
     z-index: 90;
   }
   #ilhasaudavel{
     width: 12rem;
-    height: 10rem;
+    height: 9rem;
     top: 6%;
     right: 4%;
     z-index: 90;
   }
   #tutorial {
-    width: 12rem;
-    height: 12rem;
+    width: 11rem;
+    height: 11rem;
     position: absolute;
-    top: 3%;
-    right: 0%;
+    top: 2%;
+    right: 2%;
   }
   .modal-pequeno {
     width: 85%;
