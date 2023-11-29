@@ -53,10 +53,10 @@ main {
 #personagem,
 #personagem2 {
   width: 38rem;
-  height: 55rem;
+  height: 53rem;
   position: absolute;
   display: block;
-  left: 0%;
+  left: 1%;
   bottom: -1.5%;
   z-index: -1;
 }
@@ -189,7 +189,7 @@ p {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  width: 90%;
+  width: 85%;
   height: 35%;
 }
 
@@ -210,7 +210,7 @@ p {
   color: #fff;
   animation: textclip 3s linear infinite;
   display: inline-block;
-  border: 2.8px solid #074c05;
+  border: 3.2px solid #074c05;
   padding: 0px 2rem;
   font-size: 2rem;
   font-weight: bold;

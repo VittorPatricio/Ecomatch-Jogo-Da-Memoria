@@ -240,7 +240,8 @@ header{
 }
 
 .modal-content2 {
-  background: #1a5c7b;
+  background-color: #fff;
+  color:#05174c;
   padding: 1.5rem 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -256,7 +257,6 @@ header{
 }
 
 .modal-content2 p {
-  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -269,10 +269,10 @@ header{
 
 #confirmYes,
 #confirmNo {
-  color: #fff;
+  color: #05174c;
   animation: textclip 3s linear infinite;
   display: inline-block;
-  border: 2px solid #05174c;
+  border: 4px solid #05174c;
   font-weight: bold;
   cursor: pointer;
   transition: 1s;
@@ -283,6 +283,7 @@ header{
 
 #confirmYes:hover,
 #confirmNo:hover {
+  color: #fff;
   background-clip: border-box;
   background-size: 100% auto;
 }
@@ -323,8 +324,8 @@ header{
   }
 
   .modal-content2 {
-    width: 60%;
-    height: auto;
+    width: 62%;
+    height: 30%;
   }
 
   .modal-content2 p {
@@ -332,7 +333,7 @@ header{
   }
   #confirmYes,
   #confirmNo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 0.25rem 1.5rem;
   }
   .botoes {
