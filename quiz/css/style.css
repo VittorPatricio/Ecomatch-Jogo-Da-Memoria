@@ -15,7 +15,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f8ffe6;
-  background-image: url("/img/fundo.svg");
+  background-image: url("/quiz/img/fundo.svg");
 }
 
 img {
@@ -137,20 +137,19 @@ img {
   position: absolute;
   right: -50px;
   bottom: -4px;
-  content: url("/img/folha-b.svg");
+  content: url("/quiz/img/folha-b.svg");
 }
 
 .folha-c::before {
   position: absolute;
   left: -70px;
-  z-index: -1;
   bottom: -4px;
-  content: url("/img/folha-c.svg");
+  content: url("/quiz/img/folha-c.svg");
 }
 
 /* Estilo do modal */
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -178,7 +177,7 @@ img {
 }
 
 .modal-content::after {
-  content: url("/img/Estrelas.svg");
+  content: url("/quiz/img/Estrelas.svg");
   position: absolute;
   top: -110px;
   left: 0px;

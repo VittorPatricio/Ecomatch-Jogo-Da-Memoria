@@ -112,6 +112,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (respostaCorreta) {
           // Adiciona estilo à resposta certa
           this.classList.add("resposta-certa");
+          const matchSound = document.getElementById('matchSound');
+          matchSound.play();
         } else {
           // Adiciona estilo à resposta errada
           this.classList.add("resposta-errada");
@@ -175,8 +177,14 @@ document.addEventListener("DOMContentLoaded", function () {
           "selecionada",
           "bloqueada"
         );
+
+
         if (opcoesEmbaralhadas[index] === animalAtual.opcoes[0]) {
           opcao.classList.add("correta");
+
+
+      
+      
         }
       });
     } else {
@@ -185,3 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+
+
+
