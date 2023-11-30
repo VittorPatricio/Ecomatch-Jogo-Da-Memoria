@@ -778,6 +778,13 @@ header{
   }
 }
 @media (max-width: 380px){
+  header{
+    font-size: 0.8rem;
+    top: 11%;
+    right: auto;
+    padding: 4% 8%;
+    border-radius: 10px;
+  }
   .card{
     width: 100%;
     height: 78%;
@@ -795,6 +802,13 @@ header{
   }
 }
 @media (max-width: 360px){
+  header{
+    font-size: 0.75rem;
+    top: 11%;
+    right: auto;
+    padding: 4% 8%;
+    border-radius: 10px;
+  }
   .grid{
   height:80%;
   }
@@ -810,7 +824,7 @@ header{
 
 @media (max-width: 340px){
 header{
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   top: 11%;
   right: auto;
   padding: 4% 8%;

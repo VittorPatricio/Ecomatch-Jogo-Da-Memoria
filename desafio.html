@@ -27,25 +27,39 @@
         <img class="animate__animated animate__bounceInLeft" id="personagem" src="./img/ecoguardia1.svg" alt="escoteira ecoguardiã salvadora ajudante guia ambiental">
         <div class="dialogo  animate__animated  animate__bounceInUp">
             <div class="texto">
-                <p><span>[nome da criança]</span>, vamos testar o que você <span>aprendeu</span>, Um <span>quiz</span> com perguntas apresentado. Responda às perguntas com <span>atenção</span> e <span>cuidado</span>. Você está pronto para o <span>desafio</span>?</p>
+                <p><span class="player"></span>, vamos testar o que você <span>aprendeu</span>, Um <span>quiz</span> com perguntas apresentado. Responda às perguntas com <span>atenção</span> e <span>cuidado</span>. Você está pronto para o <span>desafio</span>?</p>
             </div>
             
         </div>
     </main>
+
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+        <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget();
-      </script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="./js/tela-menina.js"></script>
-<script>
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+
+
+    <script src="./js/tela-menina.js"></script>
+
+
+    <script>
+    new window.VLibras.Widget();
+
+    const spanPlayer = document.querySelector('.player');
+    
+    window.onload = () =>{
+
+    const playerName = localStorage.getItem('player');
+
+    spanPlayer.innerHTML = playerName;
+    }
+   
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 </script>
 </body>

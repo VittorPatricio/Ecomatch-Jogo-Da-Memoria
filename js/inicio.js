@@ -1,15 +1,30 @@
-if (document.getElementById("logo").classList.contains("class-logo")) {
-    // A classe foi adicionada
-  } else {
-    // A classe não foi adicionada
-  }
+const playerName = document.getElementById('player');
+const button = document.getElementById('jogar');
+const form = document.getElementById('abrirmodal');
 
-function inicar() {
-    console.log("imagemaaaaa")
-    document.getElementById("logo").classList.add("class-logo");
+const validateInput = ({target}) =>{
+    if(target.value.length > 2){
+        button.removeAttribute('disabled');
+        return;
+    }
+    button.setAttribute('disabled', '');
 }
 
-function jogar(){
+const handleSubmit = (event) =>{
+    event.preventDefault();
+    
+    localStorage.setItem('player', playerName.value);
+}
+
+
+playerName.addEventListener('input', validateInput);
+form.addEventListener('submit', handleSubmit);
+
+
+
+
+//codigo nosso 🥔
+function iniciarJogo(){
     window.location.href = "ecoguardia.html";
 }
 
@@ -21,3 +36,4 @@ const abrirImagem = () => {
     if(form)
     imagem.addEventListener('click', revealCard);
 }
+

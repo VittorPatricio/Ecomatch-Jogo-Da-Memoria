@@ -25,12 +25,12 @@
         <img  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Voltar para a tela inicial"  src="./img/BotaoHome.svg" alt="voltar inicio inicial tela inicial" id="inicio">
     </div>
     
-        <img data-aos="fade-right" data-aos-duration="1000" id="personagem" src="./img/ecoguardia1.svg" alt="escoteira ecoguardiã salvadora ajudante guia ambiental">
+        <img id="personagem" src="./img/ecoguardia1.svg" alt="escoteira ecoguardiã salvadora ajudante guia ambiental">
         <img id="ilhasaudavel" src="./img/ilhasaudavel.png" alt="planeta infertil destruido sujo destruição paisagem sugeira">
         <a href="desafio.html" id="botao-proximo">Proximo <img src="./img/Arrow1.svg" alt="seta proximo continuar seguinte"></a>
         <div class="dialogo  animate__animated  animate__bounceInUp">
             <div class="texto">
-                <p>OBRIGADA <span>[NOME DA CRIANÇA]</span>, <span>POR AJUDAR</span> A <span>SALVAR</span> O MUNDO!</p>
+                <p>OBRIGADA <span class="player"></span>, <span>POR AJUDAR</span> A <span>SALVAR</span> O MUNDO!</p>
                 <p>VOCÊ <span>LIMPOU</span> A FLORESTA, O MAR E A CIDADE. A VIDA ESTÁ <span>PROSPERANDO</span> COMO NUNCA ANTES!</p>
             </div>
             
@@ -39,22 +39,34 @@
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+        <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget();
-      </script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="./js/tela-menina.js"></script>
+
+
+    <script src="./js/tela-menina.js"></script>
+
+
 <script>
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    AOS.init();
+
+    new window.VLibras.Widget();
+
+    const spanPlayer = document.querySelector('.player');
+    
+    window.onload = () =>{
+
+    const playerName = localStorage.getItem('player');
+
+    spanPlayer.innerHTML = playerName;
+    }
+   
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
 </body>
 </html>

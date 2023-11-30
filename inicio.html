@@ -12,12 +12,11 @@
 <body id="body" class="bootstrap-reset">
         
         <main>
-           <!--
-            <section class="modal fade" id="abrirmodal" tabindex="-1" aria-labelledby="abrirmodalLabel" aria-hidden="true" z-index="1">
+            <form class="modal fade" id="abrirmodal" tabindex="-1" aria-labelledby="abrirmodalLabel" aria-hidden="true" z-index="1">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div id="teste" class="modal-header">
-                      <img class="class-logo" src="/ecomatch.svg" alt="">
+                      <!-- <img class="class-logo" src="./img/ecomatch.svg" alt=""> -->
                       
                     </div>
                      <section class="modal-body">
@@ -27,7 +26,7 @@
                             <div class="mb-4">
                               <input type="text" class="form-control" id="player" placeholder="DIGITE SEU NOME" required>
                               <i class="fa-solid fa-user"></i>
-        
+                              
                             </div>
                           </div>
                           <div class="mb-3">
@@ -51,18 +50,18 @@
                       <button onclick="fechar()" type="button" class="btn btn-primary footer ">
                         <img src="/img/home.svg" alt="fechar tela inicial voltar">
                       </button>
-                      <button onclick="jogar()" type="button" class="btn btn-primary footer">
+                      <button id="jogar" onclick="iniciarJogo()" type="submit" class="btn btn-primary footer" disabled>
                         <img src="/img/play.svg" alt="jogr play">
                       </button>
                     </div>
                   </div>
                 </div>
-            </section>  
-              -->
-                <img src="img/ecomatch.svg" id="logo" alt="floresta cidade " class="image">
+              </form>  
+
+                <img src="./img/ecomatch.svg" id="imagem-logo" alt="floresta cidade " class="image">
            
             <section id="botoes" class="text-center">
-                <button onclick="jogar()" id="botao-iniciar" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#abrirmodal">INICIAR</button>
+                <button id="botao-iniciar" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#abrirmodal">INICIAR</button>
                 <button id="botao-creditos" class="btn btn-outline-success" onclick="creditos()">CRÉDITOS</button>
             </section>
             

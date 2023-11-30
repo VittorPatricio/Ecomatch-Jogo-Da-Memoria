@@ -219,5 +219,3 @@ window.onload = () =>{
   startTime();
   loadGame();
 }
-
-console.log(this);

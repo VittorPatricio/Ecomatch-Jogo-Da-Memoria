@@ -38,7 +38,7 @@ const createElement = (tag, className) =>{
 let firstCard = '';
 let secondCard = '';
 
-const checkEndGame = () => { //passa de fase aparecendo um modal interativo
+const checkEndGame = () => { 
   
   const disabledCards = document.querySelectorAll('.disabled-card');
 
@@ -59,7 +59,7 @@ const checkEndGame = () => { //passa de fase aparecendo um modal interativo
       mensagemfinalizacao .style.opacity = 1;
       }, 500);
       setTimeout(() =>  {
-        /* window.location.href = "fase2.html"; */
+       
       }, 1500);
 
 
@@ -183,34 +183,33 @@ const openModal = () => {
   
 }
 
+
 window.addEventListener('load', openModal);
 
-var startTime = 50;
+var startTime = 0;
 var intervalId;
+
 function updateTimer() {
-  // Calcula os minutos e segundos
+  
   const minutes = Math.floor(startTime / 60);
   const seconds = startTime % 60;
 
-  // Atualiza o conteúdo do elemento timer
+  
   timer.innerHTML = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-  
-  
-  
 
-  //salva no localstorage
+ 
   localStorage.setItem('startTime', window.startTime);
 
 
   window.startTime = startTime;
 
-  // Exibe os segundos no console
+  
   console.log(startTime);
 }
 
 function startTimer() {
   setTimeout(() => {
-    intervalId = setInterval(() => { // Atribua o setInterval a intervalId
+    intervalId = setInterval(() => { 
       startTime++;
       updateTimer();
     }, 1000);
@@ -226,3 +225,4 @@ window.onload = () =>{
   startTimer();
   loadGame();
 }
+
