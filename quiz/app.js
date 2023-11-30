@@ -45,17 +45,23 @@ document.addEventListener("DOMContentLoaded", function () {
       pergunta: "QUAL O NOME DESSE ANIMAL?",
       opcoes: ["CAMALEÃO", "GATO", "CAMELO", "CAVALO"],
     },
+    {
+      nome: "Tamanduá",
+      pergunta: "QUAL O NOME DESSE ANIMAL?",
+      opcoes: ["TAMANDUÁ", "TARTARUGA", "TATU", "TUCANO"],
+    },
   ];
 
   const imagensAnimais = {
-    Capivara: "../img/Capivara.svg",
-    Tucano: "../img/tucano.svg",
-    Onça: "../img/onça.svg",
-    Garça: "../img/garça.svg",
-    Cervo: "../img/cervo.svg",
-    Tatu: "../img/tatu.svg",
-    Arara: "../img/arara.svg",
-    Camaleão: "../img/camaleão.svg",
+    Capivara: "./img/Capivara.svg",
+    Tucano: "./img/tucano.svg",
+    Onça: "./img/onça.svg",
+    Garça: "./img/garça.svg",
+    Cervo: "./img/cervo.svg",
+    Tatu: "./img/tatu.svg",
+    Arara: "./img/arara.svg",
+    Camaleão: "./img/camaleão.svg",
+    Tamanduá: "./img/tamanduá.svg",
     // Adicione mais caminhos de imagem conforme necessário
   };
 
@@ -78,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".imagem img").src = imagensAnimais[animalAtual.nome];
   document.querySelector(
     ".quiz h1"
-  ).innerHTML = `<span>1/8</span> ${animalAtual.pergunta}`;
+  ).innerHTML = `<span>1/9</span> ${animalAtual.pergunta}`;
   document.querySelectorAll(".quiz p").forEach((opcao, index) => {
     opcao.innerHTML = `<span>${String.fromCharCode(65 + index)}</span> ${
       opcoesEmbaralhadas[index]
@@ -114,9 +120,12 @@ document.addEventListener("DOMContentLoaded", function () {
           this.classList.add("resposta-certa");
           const matchSound = document.getElementById('matchSound');
           matchSound.play();
+          respostasCorretas++;
         } else {
           // Adiciona estilo à resposta errada
           this.classList.add("resposta-errada");
+          const matchSound = document.getElementById('matchSound2');
+          matchSound.play();
         }
 
         // Adiciona classe para a opção selecionada
@@ -164,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
         imagensAnimais[animalAtual.nome];
       document.querySelector(".quiz h1").innerHTML = `<span>${
         perguntaAtual + 1
-      }/8</span> ${animalAtual.pergunta}`;
+      }/9</span> ${animalAtual.pergunta}`;
 
       opcoes.forEach((opcao, index) => {
         opcao.innerHTML = `<span>${String.fromCharCode(65 + index)}</span> ${
@@ -177,23 +186,13 @@ document.addEventListener("DOMContentLoaded", function () {
           "selecionada",
           "bloqueada"
         );
-
-
         if (opcoesEmbaralhadas[index] === animalAtual.opcoes[0]) {
           opcao.classList.add("correta");
-
-
-      
-      
         }
       });
     } else {
-      acertosSpan.textContent = `${respostasCorretas}/8`;
+      acertosSpan.textContent = `${respostasCorretas}/9`;
       modal.style.display = "block";
     }
   }
 });
-
-
-
-

@@ -1,7 +1,7 @@
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
-
+const matchSound = document.getElementById('matchSound');
 
 
 grid.addEventListener("click", () => {
@@ -73,16 +73,16 @@ const checkCards = () =>{
     const secondAnimal = secondCard.getAttribute('data-animal');
 
     if(firstAnimal === secondAnimal){
+
+        matchSound.play();
+
         firstCard.firstChild.classList.add('disabled-card');
         secondCard.firstChild.classList.add('disabled-card');
+
 
         firstCard = '';
         secondCard = '';
 
-        
-        const matchSound = document.getElementById('matchSound');
-        matchSound.play();
-      
         checkEndGame();
         
     }else{
