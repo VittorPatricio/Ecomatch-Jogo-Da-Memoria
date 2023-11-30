@@ -45,7 +45,6 @@ const checkEndGame = () => { //passa de fase aparecendo um modal interativo
 
   const mensagemfinalizacao = document.getElementById('modal-menor-finalizacao');
 
-  let cidadeSegundos;
 
   
   if (disabledCards.length == 20) {
@@ -78,7 +77,7 @@ const checkCards = () =>{
 
     if(firstCity === secondCity){
         matchSound.play();
-        
+
         firstCard.firstChild.classList.add('disabled-card');
         secondCard.firstChild.classList.add('disabled-card');
 
