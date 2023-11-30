@@ -45,27 +45,21 @@ const checkEndGame = () => { //passa de fase aparecendo um modal interativo
   const fundo = document.getElementById('modal-finalizacao');
 
   const mensagemfinalizacao = document.getElementById('modal-menor-finalizacao');
-
-  let florestaSegundos;
-
   
   if (disabledCards.length == 20) {
+    clearInterval(intervalId);
 
-    florestaSegundos = clearInterval(this.loop);
-    
-    setTimeout(() =>  {
-      mensagemfinalizacao .style.opacity = 0;
+
+
+    setTimeout(() => {
+      mensagemfinalizacao.style.opacity = 0;
       fundo.style.display = "flex";
       mensagemfinalizacao.style.display = "flex";
-
-
       setTimeout(() => {
       mensagemfinalizacao .style.opacity = 1;
       }, 500);
-
-
       setTimeout(() =>  {
-        window.location.href = "fase2.html";
+        /* window.location.href = "fase2.html"; */
       }, 1500);
 
 
@@ -191,28 +185,37 @@ const openModal = () => {
 
 window.addEventListener('load', openModal);
 
+var startTime = 50;
+var intervalId;
+function updateTimer() {
+  // Calcula os minutos e segundos
+  const minutes = Math.floor(startTime / 60);
+  const seconds = startTime % 60;
+
+  // Atualiza o conteúdo do elemento timer
+  timer.innerHTML = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  
+  
+  
+
+  //salva no localstorage
+  localStorage.setItem('startTime', window.startTime);
 
 
-const startTime = () => {
-  let totalSeconds = 0;
+  window.startTime = startTime;
 
+  // Exibe os segundos no console
+  console.log(startTime);
+}
+
+function startTimer() {
   setTimeout(() => {
-    this.loop = setInterval(() => {
-      totalSeconds++;
-
-      const minutes = Math.floor(totalSeconds / 60);
-      const seconds = totalSeconds % 60;
-
-      
-      const formattedMinutes = String(minutes).padStart(2, '0');
-      const formattedSeconds = String(seconds).padStart(2, '0');
-
-      
-      timer.innerHTML = `${formattedMinutes}:${formattedSeconds}`;
-
+    intervalId = setInterval(() => { // Atribua o setInterval a intervalId
+      startTime++;
+      updateTimer();
     }, 1000);
   }, 3000);
-};
+}
 
 window.onload = () =>{
 
@@ -220,8 +223,6 @@ window.onload = () =>{
 
   spanPlayer.innerHTML = playerName;
 
-  startTime();
+  startTimer();
   loadGame();
 }
-
-console.log(this);
