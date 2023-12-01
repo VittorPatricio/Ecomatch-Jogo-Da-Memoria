@@ -1,6 +1,7 @@
 const playerName = document.getElementById('player');
 const button = document.getElementById('jogar');
 const form = document.getElementById('abrirmodal');
+const modalbackdrop = document.getElementsByClassName('modal-backdrop');
 
 const validateInput = ({target}) =>{
     if(target.value.length > 2){
@@ -30,6 +31,7 @@ function fechar(){
     document.body.style.overflow = '';
     document.body.style.paddingRight = '';
     abrirmodal.classList.remove('');
+    modalbackdrop.style.display = 'none';
 }
 
 function iniciarJogo(){
