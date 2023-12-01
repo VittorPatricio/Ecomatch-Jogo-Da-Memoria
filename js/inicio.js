@@ -24,6 +24,11 @@ form.addEventListener('submit', handleSubmit);
 
 
 //codigo nosso 🥔
+function fechar(){
+    form.style.display= 'none';
+    document.body.classList.remove('modal-open');
+}
+
 function iniciarJogo(){
     window.location.href = "ecoguardia.html";
 }
