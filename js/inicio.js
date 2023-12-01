@@ -27,6 +27,9 @@ form.addEventListener('submit', handleSubmit);
 function fechar(){
     form.style.display= 'none';
     document.body.classList.remove('modal-open');
+    document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
+    abrirmodal.classList.remove('');
 }
 
 function iniciarJogo(){
