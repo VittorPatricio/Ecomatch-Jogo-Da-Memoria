@@ -51,16 +51,20 @@ const checkEndGame = () => {
 
 
 
-    setTimeout(() => {
-      mensagemfinalizacao.style.opacity = 0;
+    setTimeout(() =>  {
+      mensagemfinalizacao .style.opacity = 0;
       fundo.style.display = "flex";
       mensagemfinalizacao.style.display = "flex";
+
+
       setTimeout(() => {
       mensagemfinalizacao .style.opacity = 1;
       }, 500);
-      setTimeout(() =>  {
-       
-      }, 1500);
+
+
+       setTimeout(() =>  {
+        window.location.href = "fase2.html";
+      }, 1500); 
 
 
       }, 1000);
@@ -186,31 +190,26 @@ const openModal = () => {
 
 window.addEventListener('load', openModal);
 
-var startTime = 0;
+var TimeFloresta = 0;
 var intervalId;
 
 function updateTimer() {
   
-  const minutes = Math.floor(startTime / 60);
-  const seconds = startTime % 60;
+  const minutes = Math.floor(TimeFloresta / 60);
+  const seconds = TimeFloresta % 60;
 
   
   timer.innerHTML = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 
  
-  localStorage.setItem('startTime', window.startTime);
+  localStorage.setItem('TimeFloresta', window.TimeFloresta);
 
-
-  window.startTime = startTime;
-
-  
-  console.log(startTime);
 }
 
 function startTimer() {
   setTimeout(() => {
     intervalId = setInterval(() => { 
-      startTime++;
+      TimeFloresta++;
       updateTimer();
     }, 1000);
   }, 3000);

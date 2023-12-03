@@ -1,15 +1,24 @@
-const playerName = document.getElementById('player');
 const button = document.getElementById('jogar');
 const form = document.getElementById('abrirmodal');
 const modalbackdrop = document.getElementsByClassName('modal-backdrop');
+const playerName = document.getElementById('player');
+const NomeEscola = document.getElementById('escola');
+const RAaluno = document.getElementById('ra');
 
-const validateInput = ({target}) =>{
-    if(target.value.length > 2){
-        button.removeAttribute('disabled');
-        return;
-    }
-    button.setAttribute('disabled', '');
-}
+
+const validateInput = () => {
+    const isAllFilled =
+    playerName.value.length > 2 &&
+    NomeEscola.value.length > 5 &&
+    RAaluno.value.length > 8;
+  
+    button.disabled = !isAllFilled;
+};
+
+
+playerName.addEventListener('input', validateInput);
+RAaluno.addEventListener('input', validateInput);
+NomeEscola.addEventListener('input', validateInput);
 
 const handleSubmit = (event) =>{
     event.preventDefault();
@@ -18,7 +27,6 @@ const handleSubmit = (event) =>{
 }
 
 
-playerName.addEventListener('input', validateInput);
 form.addEventListener('submit', handleSubmit);
 
 

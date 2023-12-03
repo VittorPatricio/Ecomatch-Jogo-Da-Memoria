@@ -3,6 +3,35 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalText = document.getElementById("modalText");
   const acertosSpan = document.querySelector(".acertos");
 
+
+
+  //exibição dos valores dos segundos em cada fase
+  const temporizador = document.querySelector('.temporizador');
+  console.log('TempoCidade');
+  window.onload = () => {
+    const TempoFloresta = parseInt(localStorage.getItem('TimeFloresta'));
+    const TempoMar = parseInt(localStorage.getItem('TimeMar'));
+    const TempoCidade = parseInt(localStorage.getItem('TimeCidade'));
+    
+  
+    const tempoJogo = (TempoCidade + TempoFloresta + TempoMar) / 3;
+  
+  
+    const tempoJogoFinal = parseInt(Math.trunc(tempoJogo));
+   
+      
+    const minutes = Math.floor(tempoJogoFinal/ 60);
+    console.log(minutes + 'minuto')
+    const seconds = tempoJogoFinal % 60;
+    console.log(seconds + 'segundos')
+  
+  
+  
+    temporizador.innerHTML = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds} ${minutes < 10 ? 'Segundos' : 'Minutos'}`;
+  
+  }
+
+
   const animais = [
     {
       nome: "Capivara",

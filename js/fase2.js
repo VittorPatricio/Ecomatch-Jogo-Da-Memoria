@@ -48,9 +48,10 @@ const checkEndGame = () => { //passa de fase aparecendo um modal interativo
 
   
   if (disabledCards.length == 20) {
+    clearInterval(intervalId);
 
-    marSegundos = clearInterval(this.loop);
-    
+
+
     setTimeout(() =>  {
       mensagemfinalizacao .style.opacity = 0;
       fundo.style.display = "flex";
@@ -62,9 +63,9 @@ const checkEndGame = () => { //passa de fase aparecendo um modal interativo
       }, 500);
 
 
-      setTimeout(() =>  {
+       setTimeout(() =>  {
         window.location.href = "fase3.html";
-      }, 1500);
+      }, 1500); 
 
 
       }, 1000);
@@ -188,29 +189,30 @@ const openModal = () => {
 
 window.addEventListener('load', openModal);
 
+var TimeMar = 0;
+var intervalId;
 
+function updateTimer() {
+  
+  const minutes = Math.floor(TimeMar / 60);
+  const seconds = TimeMar % 60;
 
+  
+  timer.innerHTML = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 
-const startTime = () => {
-  let totalSeconds = 0;
+ 
+  localStorage.setItem('TimeMar', window.TimeMar);
 
+}
+
+function startTimer() {
   setTimeout(() => {
-    this.loop = setInterval(() => {
-      totalSeconds++;
-
-      const minutes = Math.floor(totalSeconds / 60);
-      const seconds = totalSeconds % 60;
-
-      
-      const formattedMinutes = String(minutes).padStart(2, '0');
-      const formattedSeconds = String(seconds).padStart(2, '0');
-
-      
-      timer.innerHTML = `${formattedMinutes}:${formattedSeconds}`;
-
+    intervalId = setInterval(() => { 
+      TimeMar++;
+      updateTimer();
     }, 1000);
   }, 3000);
-};
+}
 
 window.onload = () =>{
 
@@ -218,6 +220,7 @@ window.onload = () =>{
 
   spanPlayer.innerHTML = playerName;
 
-  startTime();
+  startTimer();
   loadGame();
 }
+

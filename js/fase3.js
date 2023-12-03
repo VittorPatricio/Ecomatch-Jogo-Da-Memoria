@@ -48,9 +48,8 @@ const checkEndGame = () => { //passa de fase aparecendo um modal interativo
 
   
   if (disabledCards.length == 20) {
+    clearInterval(intervalId);
 
-   cidadeSegundos = clearInterval(this.loop); // Stop the timer when disabledCards is equal to 20
-    
     setTimeout(() =>  {
       mensagemfinalizacao .style.opacity = 0;
       fundo.style.display = "flex";
@@ -62,9 +61,9 @@ const checkEndGame = () => { //passa de fase aparecendo um modal interativo
       }, 500);
 
 
-      setTimeout(() =>  {
+       setTimeout(() =>  {
         window.location.href = "agradecimento.html";
-      }, 1500);
+      }, 1500); 
 
 
       }, 1000);
@@ -189,30 +188,30 @@ const openModal = () => {
 
 window.addEventListener('load', openModal);
 
+var TimeCidade = 0;
+var intervalId;
 
+function updateTimer() {
+  
+  const minutes = Math.floor(TimeCidade / 60);
+  const seconds = TimeCidade % 60;
 
+  
+  timer.innerHTML = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 
-const startTime = () => {
-  let totalSeconds = 0;
+ 
+  localStorage.setItem('TimeCidade', window.TimeCidade);
 
+}
+
+function startTimer() {
   setTimeout(() => {
-    this.loop = setInterval(() => {
-      totalSeconds++;
-
-      const minutes = Math.floor(totalSeconds / 60);
-      const seconds = totalSeconds % 60;
-
-      
-      const formattedMinutes = String(minutes).padStart(2, '0');
-      const formattedSeconds = String(seconds).padStart(2, '0');
-
-      
-      timer.innerHTML = `${formattedMinutes}:${formattedSeconds}`;
-
+    intervalId = setInterval(() => { 
+      TimeCidade++;
+      updateTimer();
     }, 1000);
   }, 3000);
-};
-
+}
 
 window.onload = () =>{
 
@@ -220,8 +219,7 @@ window.onload = () =>{
 
   spanPlayer.innerHTML = playerName;
 
-  startTime();
+  startTimer();
   loadGame();
 }
 
-console.log(this);
