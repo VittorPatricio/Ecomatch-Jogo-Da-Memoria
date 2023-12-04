@@ -395,9 +395,9 @@ p {
     bottom: -1%;
   }
   #personagem2 {
-    width: 25rem;
+    width: 15rem;
     height: 35rem;
-    left: 0%;
+    left: 10%;
     bottom: -1%;
   }
   #ilha {
@@ -1232,15 +1232,15 @@ p {
   }
   #personagem {
     position: absolute;
-    width: 16rem;
+    width: 15rem;
     height: 20rem;
-    left: -3%;
+    left: 1%;
     bottom: 18%;
   }
   #personagem2 {
-    width: 16rem;
+    width: 8.8rem;
     height: 20rem;
-    left: -3%;
+    left: 14%;
     bottom: 18%;
   }
   #ilha {
@@ -1305,15 +1305,15 @@ p {
   }
   #personagem {
     position: absolute;
-    width: 15rem;
+    width: 14rem;
     height: 20rem;
-    left: 0%;
+    left: 1%;
     bottom: 18%;
   }
   #personagem2 {
-    width: 12rem;
+    width: 8rem;
     height: 20rem;
-    left: 7%;
+    left: 13%;
     bottom: 18%;
   }
   #ilha {
@@ -1391,15 +1391,15 @@ p {
   }
   #personagem {
     position: absolute;
-    width: 14rem;
+    width: 13rem;
     height: 19rem;
-    left: 0%;
+    left: 1%;
     bottom: 18%;
   }
   #personagem2 {
-    width: 11rem;
+    width: 7.6rem;
     height: 19rem;
-    left: 5%;
+    left: 13%;
     bottom: 18%;
   }
   #ilha {
@@ -1490,14 +1490,14 @@ p {
   }
   #personagem {
     width: 10rem;
-    height: 25rem;
+    height: 15rem;
     left: 1%;
-    bottom: 1%;
+    bottom: 18%;
   }
   #personagem2 {
-    width: 10rem;
+    width: 6rem;
     height: 15rem;
-    left: 0%;
+    left: 10%;
     bottom: 18%;
   }
   #ilha {

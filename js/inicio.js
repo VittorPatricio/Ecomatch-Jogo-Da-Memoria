@@ -34,12 +34,7 @@ form.addEventListener('submit', handleSubmit);
 
 //codigo nosso 🥔
 function fechar(){
-    form.style.display= 'none';
-    document.body.classList.remove('modal-open');
-    document.body.style.overflow = '';
-    document.body.style.paddingRight = '';
-    abrirmodal.classList.remove('');
-    modalbackdrop.style.display = 'none';
+    window.location.href = "inicio.html";
 }
 
 function iniciarJogo(){
