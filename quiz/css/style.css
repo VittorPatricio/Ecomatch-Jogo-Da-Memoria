@@ -18,10 +18,10 @@ body {
   background-size: cover;
   background-color: #f8ffe6;
   background-image: url("../img/fundo.svg");
+
 }
 
 img {
-  
   display: block;
   max-width: 100%;
 }
@@ -36,6 +36,7 @@ img {
 
 .quiz {
   display: flex;
+  align-items: center;
   flex-direction: column;
   text-align: center;
   gap: 50px;
@@ -69,7 +70,7 @@ img {
   font-weight: 800;
   font-size: 1.5rem;
   position: absolute;
-  left: 20px; /* Ajuste conforme necessário */
+  left: 20px; 
 }
 
 .quiz h1 {
@@ -82,6 +83,7 @@ img {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
   font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
   position: relative;
+  width: 100%;
 }
 
 .quiz h1 span {
@@ -236,18 +238,60 @@ img {
 }
 
 
-
-@media screen and (min-width:768px ) and (max-width:1023px){
-
+@media (max-width:1280px) {
+  .container {
+    flex-wrap: nowrap;
+    padding:  10px;
+  }
   .quiz {
-    gap: 30px;
+    gap: 60px;
   }
 
   .quiz p {
     padding: 1.3rem 20rem;
+    max-width: 90%;
   }
   .quiz h1 {
     padding: 1.3rem 8rem;
+    max-width: 90%;
+  }
+
+  .quiz h1 span  {
+    padding: 12px 8px;
+    font-size: 1.2rem;
+  }
+
+  .quiz p span {
+    padding: 6px 12px;
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (min-width:768px ) and (max-width:1023px){
+
+  .container {
+    flex-wrap: wrap;
+    padding:  20px;
+  }
+
+  .quiz {
+    gap: 30px;
+    margin-top: -80px;
+  }
+
+  .quiz p {
+    padding: 1.3rem 20rem;
+    max-width: 90%;
+  }
+  .quiz h1 {
+    padding: 1.3rem 14rem;
+    max-width: 90%;
   }
 
   .quiz h1 span  {
@@ -263,10 +307,19 @@ img {
   img {
     width: 76%;
   }
+
+  .folha-b::before,
+  .folha-d::before, .folha-c::before {
+    display: none;
+  }
 }
  
 
 @media screen and  (max-width:767px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
   .quiz {
     gap: 20px;
   }
@@ -275,6 +328,7 @@ img {
     padding: 0.8rem 8.5rem;
     font-size: 0.8rem;
   }
+
   .quiz h1 {
     padding: 1.3rem 6rem;
     font-size: 0.8rem;
@@ -298,5 +352,43 @@ img {
 .folha-d::before, .folha-c::before {
   display: none;
 }
+
+}
+
+@media (max-width:350px) {
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .quiz {
+    gap: 20px;
+  }
+
+  .quiz p {
+    padding: 0.8rem 3rem;
+    font-size: 0.4rem;
+    width: 100%;
+  }
+  .quiz h1 {
+    padding: 0.8rem 3rem;
+    font-size: 0.4rem;
+    width: 100%;
+  }
+
+  .quiz h1 span  {
+    padding: 6px 4px;
+    font-size: 0.4rem;
+  }
+
+  .quiz p span {
+    padding: 4px 6px;
+    font-size: 0.6rem;
+  }
+
+  img {
+    width: 40%;
+  }
+
 
 }
