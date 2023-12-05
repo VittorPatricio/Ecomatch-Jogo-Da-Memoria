@@ -21,6 +21,7 @@ body {
 }
 
 img {
+  
   display: block;
   max-width: 100%;
 }
@@ -156,7 +157,7 @@ img {
 }
 
 .modal-content {
-  display: block;
+  display: none;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 40px;
