@@ -79,11 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
       pergunta: "QUAL O NOME DESSE ANIMAL?",
       opcoes: ["TAMANDUÁ", "TARTARUGA", "TATU", "TUCANO"],
     },
-    {
-      nome: "Mico-Leão-Dourado",
-      pergunta: "QUAL O NOME DESSE ANIMAL?",
-      opcoes: ["Mico-Leão-Dourado", "TARTARUGA", "TATU", "TUCANO"],
-    },
+
   ];
 
   const imagensAnimais = {

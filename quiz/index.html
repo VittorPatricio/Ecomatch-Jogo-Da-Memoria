@@ -4,18 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/ecomatch.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    
+
     <title>Ecomatch</title>
 </head>
 
 <body>
-    <div class="btn">
-        <a href="#">
-            <i class="fa-solid fa-house gradient"></i>
-        </a>
-        <a href="#">
-            <i class="fa-solid fa-lightbulb gradient"></i>
-        </a>
+    <div class="botao-inicial">
+        <img  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Voltar para a tela inicial"  src="../../img/BotaoHome.svg" alt="voltar inicio inicial tela inicial" id="inicio">
     </div>
     <main class="container">
         <div class="imagem">
@@ -52,10 +50,10 @@
                         <span class="acertos"></span>
                     </div>
                 </div>
-                <div class="botoes">
-                    <a href="../inicio.html">
-                        <i class="fa-solid fa-house gradient"></i>
-                    </a>
+                <div class="btn-quiz" >
+                  <a href="">
+                    <img  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Voltar para a tela inicial"  src="../../img/BotaoHome.svg" alt="voltar inicio inicial tela inicial" id="inicio">
+                  </a>  
                 </div>
             </div>
         </div>
@@ -64,6 +62,12 @@
     <audio id="matchSound" src="../audios/correct.mp3"></audio>
     <audio id="matchSound2" src="../audios/errado.wav"></audio>
 </body>
+<script>
+    AOS.init();
+       
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 <script src="app.js"></script>
 <script src="https://kit.fontawesome.com/71bf2796c3.js" crossorigin="anonymous"></script>
 </html>
