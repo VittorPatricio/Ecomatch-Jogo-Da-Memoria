@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap");
 
-@import url(../../css/tela1.css);
+@import url("../../css/tela1.css");
 
 * {
   margin: 0;
@@ -17,7 +17,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f8ffe6;
-  background-image: url("/quiz/img/fundo.svg");
+  background-image: url("../img/fundo.svg");
 }
 
 img {
@@ -132,19 +132,19 @@ img {
   position: absolute;
   right: -50px;
   bottom: -4px;
-  content: url("/quiz/img/folha-b.svg");
+  content: url("../img/folha-b.svg");
 }
 
 .folha-c::before {
   position: absolute;
   left: -70px;
   bottom: -4px;
-  content: url("/quiz/img/folha-c.svg");
+  content: url("../img/folha-c.svg");
 }
 
 /* Estilo do modal */
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -206,14 +206,14 @@ img {
 }
 
  .temporizador::before {
-  content: url("/quiz/img/relogio.svg");
+  content: url("../img/relogio.svg");
   position: absolute;
   top: -12px;
   left: -16px;
 }
 
 .acertos::before {
-  content: url("/quiz/img/acerto.svg");
+  content: url("../img/acerto.svg");
   position: absolute;
   top: -12px;
   left: -16px;
