@@ -18,7 +18,7 @@ body {
   background: var(--Fundo, #f8ffe6);
   overflow-x: hidden;
   overflow-y: hidden;
-  background-image: url("/quiz/img/fundo.svg");
+  background-image: url("../quiz/img/fundo.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }

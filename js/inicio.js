@@ -1,7 +1,7 @@
 const button = document.getElementById('jogar');
 const form = document.getElementById('abrirmodal');
 const modalbackdrop = document.getElementsByClassName('modal-backdrop');
-const playerName = document.getElementById('player');
+const playerName = document.getElementById('PlayerName');
 const NomeEscola = document.getElementById('escola');
 const RAaluno = document.getElementById('ra');
 
