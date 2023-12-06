@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f8ffe6;
+  background-image: url("/img/fundo.svg");
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  display: flex;
+  gap: 20px;
+  margin: 12px;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+}
+
+.gradient {
+  font-size: 2rem;
+  color: #fff;
+  background: linear-gradient(to right, #7fcb28, #5c9e32);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.btn a {
+  border-radius: 40px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.quiz p {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px 40px;
+  padding: 14px 350px 20px 14px;
+  background-color: #fff;
+  padding: 12px 400px 12px 20px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.4s ease;
+}
+
+.quiz h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 32px 400px 32px 20px;
+  border-radius: 20px 40px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.quiz p span {
+  background-color: #65ab15;
+  padding: 12px 18px 12px 18px;
+  border-radius: 50%;
+  font-weight: 800;
+}
+
+.quiz h1 span {
+  background-color: #65ab15;
+  padding: 20px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.quiz p:hover {
+  transform: scale(1.05);
+}
+
+.imagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.quiz p.resposta-certa {
+  background: linear-gradient(
+    94deg,
+    rgba(127, 203, 40, 0.91) 7.79%,
+    #5c9e32 96.33%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff; /* Cor do texto para resposta certa */
+}
+
+.quiz p.resposta-errada {
+  background-color: #ff6347; /* Cor de fundo para resposta errada (exemplo: vermelho) */
+  color: #fff; /* Cor do texto para resposta errada */
+}
+
+.folha-b,
+.folha-d,
+.folha-c {
+  position: relative;
+}
+
+.folha-b::before,
+.folha-d::before {
+  position: absolute;
+  right: -50px;
+  bottom: -4px;
+  content: url("/img/folha-b.svg");
+}
+
+.folha-c::before {
+  position: absolute;
+  left: -70px;
+  z-index: -1;
+  bottom: -4px;
+  content: url("/img/folha-c.svg");
+}
+
+/* Estilo do modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 120px;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  border-radius: 6px;
+  width: 30%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.modal-content::after {
+  content: url("/img/Estrelas.svg");
+  position: absolute;
+  top: -110px;
+  left: 0px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bloqueada {
+  opacity: 45%;
+}
+
+#modalText {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.dados {
+  display: flex;
+  justify-content: space-between;
+}
+
+.acertos,
+.temporizador {
+  display: block;
+  background-color: #f8ffe6;
+  padding: 10px;
+  font-size: 1.4rem;
+  position: relative;
+  border-radius: 4px;
+}
+
+.dados span::before {
+  content: url("/img/relogio.svg");
+  position: absolute;
+  top: -12px;
+  left: -16px;
+}
+
+.relogio {
+  position: absolute;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-content a {
+  text-decoration: none;
+  background: #f8ffe6;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
