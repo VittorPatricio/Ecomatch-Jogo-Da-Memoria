@@ -889,13 +889,13 @@ p {
     position: absolute;
     width: 17rem;
     height: 23rem;
-    left: -1%;
+    left: 1%;
     bottom: 18%;
   }
   #personagem2 {
-    width: 17rem;
+    width: 10rem;
     height: 23rem;
-    left: 1%;
+    left: 13.2%;
     bottom: 18%;
   }
   #ilha {
@@ -913,8 +913,8 @@ p {
     z-index: 90;
   }
   #tutorial {
-    width: 16.8rem;
-    height: 16.8rem;
+    width: 16.2rem;
+    height: 16.2rem;
     position: absolute;
     top: 3%;
     right: 0%;
@@ -980,15 +980,15 @@ p {
   }
   #personagem {
     position: absolute;
-    width: 18rem;
+    width: 17rem;
     height: 24rem;
-    left: 0%;
+    left: 1%;
     bottom: 18%;
   }
   #personagem2 {
-    width: 18rem;
+    width: 10rem;
     height: 24rem;
-    left: 0%;
+    left: 14%;
     bottom: 18%;
   }
   #ilha {
@@ -1061,15 +1061,15 @@ p {
   }
   #personagem {
     position: absolute;
-    width: 18rem;
+    width: 17rem;
     height: 24rem;
-    left: 0%;
+    left: 1%;
     bottom: 18%;
   }
   #personagem2 {
-    width: 18rem;
+    width: 10rem;
     height: 24rem;
-    left: 0%;
+    left: 14%;
     bottom: 18%;
   }
   #ilha {
@@ -1156,13 +1156,13 @@ p {
     position: absolute;
     width: 16rem;
     height: 22rem;
-    left: -1%;
+    left: 1%;
     bottom: 18%;
   }
   #personagem2 {
-    width: 16rem;
+    width: 9.5rem;
     height: 22rem;
-    left: 1%;
+    left: 14%;
     bottom: 18%;
   }
   #ilha {
@@ -1180,8 +1180,8 @@ p {
     z-index: 90;
   }
   #tutorial {
-    width: 17rem;
-    height: 17rem;
+    width: 16rem;
+    height: 16rem;
     position: absolute;
     top: 1.2%;
     right: 0%;

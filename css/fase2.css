@@ -240,7 +240,7 @@ header{
 }
 
 .modal-content2 {
-  background-color: #fff;
+  background-color: #fefefe;
   color:#05174c;
   padding: 1.5rem 1rem;
   border-radius: 10px;
@@ -257,6 +257,7 @@ header{
 }
 
 .modal-content2 p {
+  color: #05174c;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -391,7 +392,7 @@ header{
     width: 50%;
   }
   .modal-content2 > p{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   #confirmYes,
   #confirmNo {
