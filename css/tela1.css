@@ -808,7 +808,7 @@ p {
     width: 95%;
     height: 100%;
   }
-  #botao-proximo {
+  #botao-proximo,  #botao-voltar  {
     width: 9rem;
     height: 2rem;
     padding: 0px 5px;
@@ -818,11 +818,14 @@ p {
     font-weight: 600;
     box-shadow: #65ab15 2px 2px, #1a6b17 4px 4px;
   }
-  #botao-proximo:hover {
+  #botao-voltar {
+    bottom: 32%;
+  }
+  #botao-proximo:hover,  #botao-voltar:hover {
     transform: scale(1.1);
     right: 4.2%;
   }
-  #botao-proximo > img {
+  #botao-proximo > img,  #botao-voltar > img {
     width: 1rem;
     height: 1rem;
     padding: 0;
@@ -912,7 +915,7 @@ p {
     width: 95%;
     height: 100%;
   }
-  #botao-proximo {
+  #botao-proximo,  #botao-voltar  {
     width: 7rem;
     height: 2rem;
     padding: 0px 5px;
@@ -922,11 +925,14 @@ p {
     font-weight: 600;
     box-shadow: #65ab15 2px 2px, #1a6b17 4px 4px;
   }
-  #botao-proximo:hover {
+  #botao-voltar {
+    bottom: 30%;
+  }
+  #botao-proximo:hover,  #botao-voltar:hover  {
     transform: scale(1.1);
     right: 4.2%;
   }
-  #botao-proximo > img {
+  #botao-proximo > img,  #botao-voltar > img {
     width: 0.75rem;
     height: 0.75rem;
   }
@@ -1000,7 +1006,7 @@ p {
     width: 95%;
     height: 100%;
   }
-  #botao-proximo {
+  #botao-proximo, #botao-voltar {
     width: 6.5rem;
     height: 1.75rem;
     display: flex;
@@ -1014,12 +1020,14 @@ p {
     font-weight: 600;
     padding: 0rem 0.5rem;
   }
-
-  #botao-proximo > img {
+  #botao-voltar{
+    bottom: 30%;
+  }
+  #botao-proximo > img, #botao-voltar > img {
     width: 0.72rem;
     height: 0.72rem;
   }
-  #botao-proximo:hover {
+  #botao-proximo:hover, #botao-voltar:hover {
     transform: scale(1.1);
     right: 4%;
   }
@@ -1081,7 +1089,7 @@ p {
     width: 95%;
     height: 100%;
   }
-  #botao-proximo {
+  #botao-proximo, #botao-voltar {
     width: 6.5rem;
     height: 1.75rem;
     display: flex;
@@ -1095,12 +1103,14 @@ p {
     font-weight: 600;
     padding: 0rem 0.5rem;
   }
-
-  #botao-proximo > img {
+  #botao-voltar{
+    bottom: 30%;
+  }
+  #botao-proximo > img, #botao-voltar > img {
     width: 0.72rem;
     height: 0.72rem;
   }
-  #botao-proximo:hover {
+  #botao-proximo:hover, #botao-voltar:hover {
     transform: scale(1.1);
     right: 4%;
   }
@@ -1174,7 +1184,7 @@ p {
     width: 95%;
     height: 100%;
   }
-  #botao-proximo {
+  #botao-proximo , #botao-voltar{
     width: 6.5rem;
     height: 1.75rem;
     display: flex;
@@ -1188,12 +1198,14 @@ p {
     font-weight: 600;
     padding: 0rem 0.5rem;
   }
-
-  #botao-proximo > img {
+  #botao-voltar{
+    bottom: 30%;
+  }
+  #botao-proximo > img, #botao-voltar > img {
     width: 0.72rem;
     height: 0.72rem;
   }
-  #botao-proximo:hover {
+  #botao-proximo:hover, #botao-voltar:hover {
     transform: scale(1.1);
     right: 4.2%;
   }
@@ -1338,7 +1350,7 @@ p {
   span{
     font-weight: 600;
   }
-  #botao-proximo {
+  #botao-proximo, #botao-voltar {
     width: 6.5rem;
     height: 1.75rem;
     right: 2.5%;
@@ -1346,7 +1358,10 @@ p {
     font-size: 0.65rem;
     font-weight: 600;
   }
-  #botao-proximo:hover {
+  #botao-voltar{
+    bottom: 30%;
+  }
+  #botao-proximo:hover, #botao-voltar:hover {
     transform: scale(1.1);
     right: 3.8%;
   }
@@ -1419,7 +1434,7 @@ p {
   span{
     font-weight: 600;
   }
-  #botao-proximo {
+  #botao-proximo, #botao-voltar {
     width: 6.5rem;
     height: 1.75rem;
     right: 2.6%;
@@ -1427,12 +1442,20 @@ p {
     font-size: 0.7rem;
     font-weight: 700;
   }
+  #botao-voltar{
+    bottom: 30%;
+  }
   #botao-proximo > img{
     width: 0.65rem;
     height: 0.65rem;
     padding: 0;
   }
-  #botao-proximo:hover {
+  #botao-voltar > img{
+    width: 0.60rem;
+    height: 0.60rem;
+    padding: 0;
+  }
+  #botao-proximo:hover, #botao-voltar:hover {
     transform: scale(1.1);
     right: 4%;
   }
@@ -1517,7 +1540,7 @@ p {
     width: 95%;
     height: 100%;
   }
-  #botao-proximo {
+  #botao-proximo, #botao-voltar {
     width: 5rem;
     height: 1.2rem;
     padding: 0px 5px;
@@ -1526,14 +1549,21 @@ p {
     font-size: 0.45rem;
     font-weight: 700;
   }
-  #botao-proximo:hover {
+  #botao-voltar{
+    bottom: 30%;
+  }
+  #botao-proximo:hover, #botao-voltar:hover {
     transform: scale(1.1);
     right: 9%;
   }
 
-  #botao-proximo > img {
+  #botao-proximo > img{
     width: 1rem;
     height: 0.5rem;
+  }
+  #botao-voltar > img {
+    width: 1rem;
+    height: 0.48rem;
   }
   #personagem {
     width: 10rem;
