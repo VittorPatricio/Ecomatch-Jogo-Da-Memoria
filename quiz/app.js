@@ -385,7 +385,9 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       acertosSpan.textContent = `${respostasCorretas}/10`;
       modal.style.display = "block";
-      // Aqui você pode adicionar qualquer código adicional que deseja executar quando o quiz terminar
+      voltarParaInicio.style.display = "none";
+      
+      
     }
   }
   

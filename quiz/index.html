@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../img/ecomatch.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     
+    
 
     <title>Ecomatch</title>
 </head>
@@ -16,8 +17,8 @@
         <img  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Voltar para a tela inicial"  src="../img/BotaoHome.svg" alt="voltar inicio inicial tela inicial" id="inicio">
     </div>
 
-    <div id="confirmationModal" class="confirmationModal">
-        <div id="modalpequeno" class="modal-pequeno">
+    <div id="confirmationModal" class="modal2">
+        <div id="modalpequeno" class="modal-content2">
             <p>Tem certeza que deseja voltar para a página inicial?</p>
             <div class="botoes">            
                 <button id="confirmYes" class="btn btn-outline-success">Sim</button>
@@ -73,8 +74,6 @@
     <audio id="matchSound2" src="../audios/errado.wav"></audio>
 </body>
 <script>
-    AOS.init();
-       
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>

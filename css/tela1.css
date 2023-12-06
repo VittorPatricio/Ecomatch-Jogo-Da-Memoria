@@ -176,7 +176,7 @@ p {
 }
 
 .modal-pequeno {
-  background: #92d24a;
+  background: #fefefe;
   padding: 1.5rem 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -185,6 +185,7 @@ p {
   z-index: 3;
   animation: fadeIn 1s;
   word-spacing: 0.4rem;
+  color: #074c05;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -207,10 +208,10 @@ p {
 
 #confirmYes,
 #confirmNo {
-  color: #fff;
   animation: textclip 3s linear infinite;
   display: inline-block;
   border: 3.2px solid #074c05;
+  color:#074c05;
   padding: 0px 2rem;
   font-size: 2rem;
   font-weight: bold;
@@ -224,6 +225,7 @@ p {
 #confirmYes:hover,
 #confirmNo:hover {
   background-clip: border-box;
+  color: #fff;
   background-size: 100% auto;
 }
 
