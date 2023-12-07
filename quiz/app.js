@@ -167,7 +167,7 @@ const botaoInicial = document.querySelector(".botao-inicial")
       id: 23,
       nome: "Tucano",
       pergunta: "QUAL É O NOME DESSE ANIMAL?",
-      opcoes: ["TUCANO", "TAMANDUÁ", "TATUAGEM", "TRATOR"],
+      opcoes: ["TUCANO", "TAMANDUÁ", "TIGRE", "TEXUGO"],
     },
 
 
@@ -202,7 +202,7 @@ const botaoInicial = document.querySelector(".botao-inicial")
     Bombeiro: "./img/bombeiro.svg",
     Camaleão: "./img/camaleão.svg",
     Cervo: "./img/cervo.svg",
-    Capivara: "./img/Capivara.svg",
+    Capivara: "./img/capivara.svg",
     Casa: "./img/casa.svg",
     Cinema: "./img/cinema.svg",
     Concha: "./img/concha.svg",
