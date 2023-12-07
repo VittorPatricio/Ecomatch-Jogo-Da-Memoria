@@ -547,7 +547,7 @@ img {
   }
 }
 
-@media (max-width:320px) {
+@media (max-width: 320px) {
   .modal-content {
     width: 90%;
     margin: 30% auto;

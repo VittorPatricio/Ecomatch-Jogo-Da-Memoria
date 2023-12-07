@@ -164,9 +164,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     {
       id: 22,
-      nome: "Restaurante",
+      nome: "Piscina",
       pergunta: "QUAL É O NOME DESSE LUGAR?",
-      opcoes: ["RESTAURANTE", "RODOVIÁRIA", "RUA", "RESIDÊNCIA"],
+      opcoes: ["PISCINA", "PRIA", "PARQUE", "PRAÇA"],
     },
 
     {
@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function () {
     Parquinho: "./img/parquinho.svg",
     Policial: "./img/policial.svg",
     Polvo: "./img/polvo.svg",
-    Restaurante: "./img/restaurante.svg",
+    Piscina: "./img/restaurante.svg",
     Tucano: "./img/tucano.svg",
     Tatu: "./img/tatu.svg",
     Tamanduá: "./img/tamanduá.svg",
