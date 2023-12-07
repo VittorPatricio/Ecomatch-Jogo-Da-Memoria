@@ -1,32 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("myModal");
-  const modalText = document.getElementById("modalText");
   const acertosSpan = document.querySelector(".acertos");
-  
   const temporizador = document.querySelector('.temporizador');
-  console.log('TempoCidade');
-  window.onload = () => {
-    const TempoFloresta = parseInt(localStorage.getItem('TimeFloresta'));
-    const TempoMar = parseInt(localStorage.getItem('TimeMar'));
-    const TempoCidade = parseInt(localStorage.getItem('TimeCidade'));
-    
-  
-    const tempoJogo = (TempoCidade + TempoFloresta + TempoMar) / 3;
-  
-  
-    const tempoJogoFinal = parseInt(Math.trunc(tempoJogo));
-   
-      
-    const minutes = Math.floor(tempoJogoFinal/ 60);
-    console.log(minutes + 'minuto')
-    const seconds = tempoJogoFinal % 60;
-    console.log(seconds + 'segundos')
-  
-  
-  
-    temporizador.innerHTML = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds} ${minutes < 10 ? 'Segundos' : 'Minutos'}`;
-  
-  }
+  const voltarParaInicio = document.getElementById("inicio");
+  const confirmationModal = document.getElementById("confirmationModal");
+  const confirmYes = document.getElementById("confirmYes");
+  const confirmNo = document.getElementById("confirmNo");
+
+  const TempoFloresta = parseInt(localStorage.getItem('TimeFloresta')) || 0;
+  const TempoMar = parseInt(localStorage.getItem('TimeMar')) || 0;
+  const TempoCidade = parseInt(localStorage.getItem('TimeCidade')) || 0;
+  const tempoJogo = (TempoCidade + TempoFloresta + TempoMar) / 3;
+  const tempoJogoFinal = parseInt(Math.trunc(tempoJogo));
+  const minutes = Math.floor(tempoJogoFinal / 60);
+  const seconds = tempoJogoFinal % 60;
+  temporizador.innerHTML = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds} ${minutes < 10 ? 'Segundos' : 'Minutos'}`;
+
 
 
   const animais = [
@@ -92,13 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
       nome: "Capivara",
       pergunta: "QUAL É O NOME DESSE ANIMAL?",
       opcoes: ["CAPIVARA", "CACHORRO", "CAPIXABA", "CAPITUVAL"],
-    },
-
-    {
-      id: 10,
-      nome: "Carangueijo",
-      pergunta: "QUAL É O NOME DESSE ANIMAL?",
-      opcoes: ["CAMARÃO", "CARANGUEIJO", "CONCHA", "CARPA"],
     },
 
     {
@@ -228,7 +210,6 @@ document.addEventListener("DOMContentLoaded", function () {
     Camaleão: "./img/camaleão.svg",
     Cervo: "./img/cervo.svg",
     Capivara: "./img/Capivara.svg",
-    Carangueijo: "./img/carangueijo.svg",
     Casa: "./img/casa.svg",
     Cinema: "./img/cinema.svg",
     Concha: "./img/concha.svg",
@@ -247,19 +228,63 @@ document.addEventListener("DOMContentLoaded", function () {
     Tartaruga: "./img/tartaruga.svg",
   };
   
-  const Alternativas = selecionarAleatoriamente(animais, 10);
-  const animalAtual = Alternativas[0];
+  const todasPerguntas = [...animais];
+  shuffleArray(todasPerguntas);
 
+  let perguntaAtual = 0;
+  let respostasCorretas = 0;
 
-  function selecionarAleatoriamente(array, n) {
-    const copiaArray = array.slice(); // Cria uma cópia do array para não modificar o original
-    shuffleArray(copiaArray); // Embaralha a cópia do array
-    return copiaArray.slice(0, n); // Retorna os primeiros n elementos
+  exibirPergunta();
+
+  function exibirPergunta() {
+    const animalAtual = todasPerguntas[perguntaAtual];
+    const opcoesEmbaralhadas = [...animalAtual.opcoes];
+    shuffleArray(opcoesEmbaralhadas);
+
+    document.querySelector(".imagem img").src = imagensAnimais[animalAtual.nome];
+    document.querySelector(".quiz h1").innerHTML = `<span>${perguntaAtual + 1}/10</span> ${animalAtual.pergunta}`;
+
+    const opcoes = document.querySelectorAll(".quiz p");
+    opcoes.forEach((opcao, index) => {
+      opcao.innerHTML = `<span>${String.fromCharCode(65 + index)}</span> ${opcoesEmbaralhadas[index]}`;
+      opcao.classList.remove("correta", "resposta-certa", "resposta-errada", "selecionada", "bloqueada");
+      if (opcoesEmbaralhadas[index] === animalAtual.opcoes[0]) {
+        opcao.classList.add("correta");
+      }
+    });
+
+    opcoes.forEach((opcao) => {
+      opcao.addEventListener("click", verificarResposta);
+    });
   }
 
+  function verificarResposta() {
+    const respostaCorreta = this.classList.contains("correta");
 
+    if (respostaCorreta) {
+      this.classList.add("resposta-certa");
+      respostasCorretas++;
+      const matchSound = document.getElementById('matchSound');
+      matchSound.play();
 
-  // Função para embaralhar array usando o algoritmo de Fisher-Yates (shuffle)
+    } else {
+      this.classList.add("resposta-errada");
+      const matchSound = document.getElementById('matchSound2');
+      matchSound.play();
+    }
+
+    perguntaAtual++;
+
+    if (perguntaAtual < 10) {
+      setTimeout(() => {
+        exibirPergunta();
+      }, 1000);
+    } else {
+      acertosSpan.textContent = `${respostasCorretas}/10`;
+      modal.style.display = "block";
+    }
+  }
+
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -267,150 +292,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-
-  // Embaralhe as opções do animal atual (incluindo a resposta correta)
-  const opcoesEmbaralhadas = [...animalAtual.opcoes];
-  shuffleArray(opcoesEmbaralhadas);
-
-  // Substitua as informações no HTML
-  document.querySelector(".imagem img").src = imagensAnimais[animalAtual.nome];
-  document.querySelector(
-    ".quiz h1"
-  ).innerHTML = `<span>1/10</span> ${animalAtual.pergunta}`;
-  document.querySelectorAll(".quiz p").forEach((opcao, index) => {
-    opcao.innerHTML = `<span>${String.fromCharCode(65 + index)}</span> ${
-      opcoesEmbaralhadas[index]
-    }`;
-    opcao.classList.remove("correta", "resposta-certa", "resposta-errada");
-    if (opcoesEmbaralhadas[index] === animalAtual.opcoes[0]) {
-      opcao.classList.add("correta");
-    }
-  });
-
-  const opcoes = document.querySelectorAll(".quiz p");
-  let opcoesBloqueadas = false;
-  let perguntaAtual = 0;
-  let respostasCorretas = 0; // Contador de respostas corretas
-
-  opcoes.forEach((opcao) => {
-    opcao.addEventListener("click", function () {
-      const respostaCorreta = this.classList.contains("correta");
-
-      // Verifica se as opções estão bloqueadas
-      if (!opcoesBloqueadas) {
-        // Remove qualquer estilo anterior
-        opcoes.forEach((op) =>
-          op.classList.remove(
-            "resposta-certa",
-            "resposta-errada",
-            "selecionada"
-          )
-        );
-
-        if (respostaCorreta) {
-          // Adiciona estilo à resposta certa
-          this.classList.add("resposta-certa");
-          const matchSound = document.getElementById('matchSound');
-          matchSound.play();
-          respostasCorretas++;
-        } else {
-          // Adiciona estilo à resposta errada
-          this.classList.add("resposta-errada");
-          const matchSound = document.getElementById('matchSound2');
-          matchSound.play();
-        }
-
-        // Adiciona classe para a opção selecionada
-        this.classList.add("selecionada");
-
-        // Bloqueia as opções
-        bloquearOpcoes();
-
-        // Aguarde 3 segundos antes de exibir a próxima pergunta (opcional)
-        setTimeout(() => {
-          // Desbloqueia as opções para a nova pergunta
-          desbloquearOpcoes();
-          // Avança para a próxima pergunta
-          proximaPergunta();
-        }, 1000);
-      }
-    });
-  });
-
-  function bloquearOpcoes() {
-    opcoesBloqueadas = true;
-    opcoes.forEach((opcao) => {
-      if (!opcao.classList.contains("selecionada")) {
-        opcao.classList.add("bloqueada");
-      }
-    });
-  }
-
-  function desbloquearOpcoes() {
-    opcoesBloqueadas = false;
-    opcoes.forEach((opcao) => {
-      opcao.classList.remove("bloqueada");
-    });
-  }
-
-  function proximaPergunta() {
-    perguntaAtual++;
-  
-    if (perguntaAtual < 10) {  // Modificamos esta linha para 10
-      const animalAtual = animais[perguntaAtual];
-      const opcoesEmbaralhadas = [...animalAtual.opcoes];
-      shuffleArray(opcoesEmbaralhadas);
-  
-      document.querySelector(".imagem img").src =
-        imagensAnimais[animalAtual.nome];
-      document.querySelector(".quiz h1").innerHTML = `<span>${
-        perguntaAtual + 1
-      }/10</span> ${animalAtual.pergunta}`;
-  
-      opcoes.forEach((opcao, index) => {
-        opcao.innerHTML = `<span>${String.fromCharCode(65 + index)}</span> ${
-          opcoesEmbaralhadas[index]
-        }`;
-        opcao.classList.remove(
-          "correta",
-          "resposta-certa",
-          "resposta-errada",
-          "selecionada",
-          "bloqueada"
-        );
-        if (opcoesEmbaralhadas[index] === animalAtual.opcoes[0]) {
-          opcao.classList.add("correta");
-        }
-      });
-    } else {
-      acertosSpan.textContent = `${respostasCorretas}/10`;
-      modal.style.display = "block";
-      voltarParaInicio.style.display = "none";
-      
-      
-    }
-  }
-  
-});
-
-
-/* MODAL */
-
-const voltarParaInicio = document.getElementById("inicio");
-const pararSom = document.getElementById("som")
-const confirmationModal = document.getElementById("confirmationModal");
-const confirmYes = document.getElementById("confirmYes");
-const confirmNo = document.getElementById("confirmNo");
-
-
-voltarParaInicio.addEventListener("click", () => {
+  voltarParaInicio.addEventListener("click", () => {
     confirmationModal.style.display = "flex";
-});
+  });
 
-confirmYes.addEventListener("click", () => {
+  confirmYes.addEventListener("click", () => {
     window.location.href = "../inicio.html";
-});
+  });
 
-confirmNo.addEventListener("click", () => {
+  confirmNo.addEventListener("click", () => {
     confirmationModal.style.display = "none";
+  });
 });

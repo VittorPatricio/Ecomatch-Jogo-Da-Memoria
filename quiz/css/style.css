@@ -160,9 +160,9 @@ img {
 }
 
 .modal-content {
-  display: block;
+  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 40px;
   background-color: #fefefe;
   margin: 15% auto;
@@ -177,8 +177,8 @@ img {
 .modal-content::after {
   content: url("/quiz/img/Estrelas.svg");
   position: absolute;
-  top: -110px;
-  left: 0px;
+  top: -120px;
+  left: -26px;
 }
 
 .bloqueada {
@@ -195,7 +195,14 @@ img {
 
 .dados {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.tempo,.perguntas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
 }
 
 .acertos,
@@ -228,9 +235,6 @@ img {
   position: absolute;
 }
 
-.modal-content {
-  position: relative;
-}
 
 .botoes {
   display: flex;
@@ -271,10 +275,8 @@ img {
   img {
     width: 100%;
   }
+  
 }
-
-
-
 
 
 @media (max-width:1280px) {
@@ -308,6 +310,35 @@ img {
   img {
     width: 100%;
   }
+
+  .modal-content {
+    width: 40%;
+    margin: 15% auto;
+    display: flex;
+   justify-content: space-around;
+   padding: 60px 10px;
+  }
+  
+  .modal-content::after {
+  display: none;
+  }
+
+  #modalText  {
+    font-size: 3rem;
+  }
+
+  .dados {
+    gap: 20px;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  .temporizador,.acertos {
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+  }
+
 }
 
 
@@ -351,8 +382,25 @@ img {
   .folha-d::before, .folha-c::before {
     display: none;
   }
+
+  .modal-content {
+    width: 80%;
+    margin: 50% auto;
+  }
+  
+  .modal-content::after {
+  display: none;
+  }
+
 }
  
+
+@media (max-width:769px) {
+  .modal-content {
+    margin: 30% auto;
+  }
+  
+}
 
 @media screen and  (max-width:767px) {
   .container {
@@ -394,7 +442,69 @@ img {
 
 }
 
-@media (max-width:350px) {
+
+@media (min-width: 392px) and (max-width: 474px) {
+  .modal-content {
+    width: 80%;
+    margin: 30% auto;
+    display: flex;
+   justify-content: space-around;
+  }
+  
+  .modal-content::after {
+  display: none;
+  }
+
+  #modalText  {
+    font-size: 2rem;
+  }
+
+  .dados {
+    gap: 20px;
+    justify-content: center;
+    font-size: 0.5rem;
+  }
+
+  .temporizador,.acertos {
+    display: flex;
+    text-align: center;
+    font-size: 0.6rem;
+  }
+}
+
+
+
+
+@media (max-width: 390px) {
+  .modal-content {
+    width: 80%;
+    margin: 30% auto;
+    display: flex;
+   justify-content: space-around;
+  }
+  
+  .modal-content::after {
+  display: none;
+  }
+
+  #modalText  {
+    font-size: 2rem;
+  }
+
+  .dados {
+    gap: 20px;
+    justify-content: center;
+    font-size: 0.5rem;
+  }
+
+  .temporizador,.acertos {
+    display: flex;
+    text-align: center;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 360px) {
 
   .container {
     flex-wrap: wrap;
@@ -428,6 +538,41 @@ img {
   img {
     width: 40%;
   }
+  
+  .modal-content {
+    width: 80%;
+    margin: 50% auto;
+    display: flex;
+   justify-content: space-around;
+  }
+}
 
+@media (max-width:320px) {
+  .modal-content {
+    width: 90%;
+    margin: 30% auto;
+    padding: 20px 10px;
+    display: flex;
+   justify-content: space-around;
+  }
+  
+  .modal-content::after {
+  display: none;
+  }
 
+  #modalText  {
+    font-size: 1.4rem;
+  }
+
+  .dados {
+    gap: 20px;
+    justify-content: center;
+    font-size: 0.5rem;
+  }
+
+  .temporizador,.acertos {
+    display: flex;
+    text-align: center;
+    font-size: 0.6rem;
+  }
 }
