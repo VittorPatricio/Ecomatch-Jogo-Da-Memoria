@@ -239,6 +239,44 @@ img {
 }
 
 
+
+@media (max-width:1366px) {
+  .container {
+    flex-wrap: nowrap;
+    padding:  10px;
+  }
+  .quiz {
+    gap: 50px;
+  }
+
+  .quiz p {
+    padding: 1.3rem 20rem;
+    max-width: 90%;
+  }
+  .quiz h1 {
+    padding: 1.3rem 8rem;
+    max-width: 90%;
+  }
+
+  .quiz h1 span  {
+    padding: 12px 8px;
+    font-size: 1.2rem;
+  }
+
+  .quiz p span {
+    padding: 6px 12px;
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+
+
+
+
 @media (max-width:1280px) {
   .container {
     flex-wrap: nowrap;
