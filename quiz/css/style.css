@@ -239,6 +239,16 @@ img {
 }
 
 
+
+@media (max-width:1366px) {
+  .container {
+    flex-wrap: nowrap;
+    padding:  10px;
+  }
+}
+
+
+
 @media (max-width:1280px) {
   .container {
     flex-wrap: nowrap;
