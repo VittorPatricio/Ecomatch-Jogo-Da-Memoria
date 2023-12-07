@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const confirmationModal = document.getElementById("confirmationModal");
   const confirmYes = document.getElementById("confirmYes");
   const confirmNo = document.getElementById("confirmNo");
-
+const botaoInicial = document.querySelector(".botao-inicial")
   const TempoFloresta = parseInt(localStorage.getItem('TimeFloresta')) || 0;
   const TempoMar = parseInt(localStorage.getItem('TimeMar')) || 0;
   const TempoCidade = parseInt(localStorage.getItem('TimeCidade')) || 0;
@@ -20,13 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const animais = [
     
-    {
-      id: 1,
-      nome: "Alga",
-      pergunta: "QUAL É O NOME DESSA PLANTA?",
-      opcoes: ["ARRAIA", "ÁGUA", "ALGA", "AREIA"],
-    },
-    
+  
     {
       id: 2,
       nome: "Arara",
@@ -123,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
       id: 16,
       nome: "Garça",
       pergunta: "QUAL É O NOME DESSE ANIMAL?",
-      opcoes: ["GARÇA", "GATO", "GABRIEL", "GABI"],
+      opcoes: ["GARÇA", "GATO", "GALO", "GAIVOTA"],
      },
 
      {
@@ -201,7 +195,6 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const imagensAnimais = {
-    Alga: "./img/alga.svg",
     Arara: "./img/arara.svg",
     Ariranha: "./img/ariranha.svg",
     Baleia: "./img/baleia.svg",
@@ -282,6 +275,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       acertosSpan.textContent = `${respostasCorretas}/10`;
       modal.style.display = "block";
+      botaoInicial.style.display = "none";
+
     }
   }
 

@@ -59,7 +59,7 @@
                 </div>
                 <div class="btn-quiz" >
                   <a href="/inicio.html">
-                    <img  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Voltar para a tela inicial"  src="../img/BotaoHome.svg" alt="voltar inicio inicial tela inicial" id="inicio">
+                    <img  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Voltar para a tela inicial"  src="../img/BotaoHome.svg" alt="voltar inicio inicial tela inicial" id="inicio2">
                   </a>  
                 </div>
             </div>
@@ -68,11 +68,16 @@
     </main>
     <audio id="matchSound" src="../audios/correct.mp3"></audio>
     <audio id="matchSound2" src="../audios/errado.wav"></audio>
+    <script src="app.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 </body>
-<script>
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
-<script src="app.js"></script>
-<script src="https://kit.fontawesome.com/71bf2796c3.js" crossorigin="anonymous"></script>
 </html>

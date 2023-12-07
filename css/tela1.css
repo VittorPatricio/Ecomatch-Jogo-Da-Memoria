@@ -33,14 +33,14 @@ body {
   height: 5rem;
 }
 
-#inicio {
+#inicio, #inicio2 {
   width: 5rem;
   height: 5rem;
   transition: all 500ms ease;
   cursor: pointer;
 }
 
-#inicio:hover {
+#inicio:hover ,  #inicio2:hover {
   transform: scale(1.2);
 }
 
@@ -285,7 +285,7 @@ p {
     height: 4rem;
   }
 
-  #inicio {
+  #inicio,  #inicio2 {
     width: auto;
     height: 4rem;
   }
@@ -420,7 +420,7 @@ p {
     height: 4rem;
   }
 
-  #inicio {
+  #inicio,  #inicio2{
     width: auto;
     height: 4rem;
   }
@@ -525,7 +525,7 @@ p {
     height: 4rem;
   }
 
-  #inicio {
+  #inicio,  #inicio2 {
     width: auto;
     height: 4rem;
   }
@@ -634,7 +634,7 @@ p {
     height: 4rem;
   }
 
-  #inicio {
+  #inicio,  #inicio2 {
     width: auto;
     height: 4rem;
   }
@@ -746,7 +746,7 @@ p {
     height: 4rem;
   }
 
-  #inicio {
+  #inicio,  #inicio2 {
     width: auto;
     height: 4rem;
   }
@@ -959,7 +959,7 @@ p {
     height: 3.2rem;
   }
 
-  #inicio {
+  #inicio , #inicio2{
     width: auto;
     height: 3.2rem;
   }
@@ -1240,7 +1240,7 @@ p {
     height: 3rem;
   }
 
-  #inicio {
+  #inicio,  #inicio2 {
     width: auto;
     height: 3rem;
   }
@@ -1358,7 +1358,7 @@ p {
     height: 3rem;
   }
 
-  #inicio {
+  #inicio , #inicio2{
     width: auto;
     height: 3rem;
   }
@@ -1421,7 +1421,7 @@ p {
     justify-content: space-between;
     height: 2.8rem;
   }
-  #inicio{
+  #inicio ,  #inicio2{
     height: 2.8rem;
   }
   .dialogo {
@@ -1613,7 +1613,7 @@ p {
     height: 2rem;
   }
 
-  #inicio {
+  #inicio,  #inicio2 {
     width: auto;
     height: 2rem;
   }
