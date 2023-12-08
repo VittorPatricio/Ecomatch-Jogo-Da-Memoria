@@ -133,7 +133,7 @@ p {
   background-color: #fff;
   position: absolute;
   top: 20%;
-  right: 30%;
+  right: 25%;
   color: #0c4d0a;
   font-size: 3.5rem;
   font-weight: 600;
@@ -163,7 +163,7 @@ p {
 
 #botao-voltar{
   padding: 1rem 2rem;
-  bottom: 34%;
+  bottom: 35%;
 }
 
 #botao-proximo > img, #botao-voltar > img {
@@ -350,7 +350,7 @@ p {
     box-shadow: #65ab15 4px 4px, #1a6b17 8px 8px;
   }
   #botao-voltar{
-    bottom: 38%;
+    bottom: 39%;
   }
   #botao-proximo > img, #botao-voltar > img {
     padding: 0;
@@ -363,15 +363,15 @@ p {
     right: 8%;
   }
   #personagem {
-    width: 38rem;
-    height: 52rem;
+    width: 34rem;
+    height: 48rem;
     left: 2%;
     bottom: 0%;
   }
   #personagem2 {
-    width: 22rem;
-    height: 52rem;
-    left: 10%;
+    width: 20rem;
+    height: 48rem;
+    left: 9%;
     bottom: -1%;
   }
   #ilha {
@@ -389,23 +389,23 @@ p {
     z-index: 90;
   }
   #tutorial {
-    width: 35rem;
-    height: 35rem;
+    width: 32rem;
+    height: 32rem;
     top: 5%;
-    right: 20%;
+    right: 25%;
   }
 
   .modal-pequeno {
-    width: 70%;
+    width: 65%;
     height: 35%;
   }
 
   .modal-pequeno p {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   #confirmYes,
   #confirmNo {
-    font-size: 2rem;
+    font-size: 1.75rem;
     padding: 0.25rem 1.5rem;
     border: 3px solid #074c05;
   }
