@@ -32,7 +32,6 @@ form.addEventListener('submit', handleSubmit);
 
 
 
-//codigo nosso 🥔
 function fechar(){
     window.location.href = "inicio.html";
 }

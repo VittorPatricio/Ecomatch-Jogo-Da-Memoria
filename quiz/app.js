@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const confirmationModal = document.getElementById("confirmationModal");
   const confirmYes = document.getElementById("confirmYes");
   const confirmNo = document.getElementById("confirmNo");
-const botaoInicial = document.querySelector(".botao-inicial")
+  const botaoInicial = document.querySelector(".botao-inicial")
   const TempoFloresta = parseInt(localStorage.getItem('TimeFloresta')) || 0;
   const TempoMar = parseInt(localStorage.getItem('TimeMar')) || 0;
   const TempoCidade = parseInt(localStorage.getItem('TimeCidade')) || 0;

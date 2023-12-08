@@ -37,7 +37,7 @@ const createElement = (tag, className) =>{
 let firstCard = '';
 let secondCard = '';
 
-const checkEndGame = () => { //passa de fase aparecendo um modal interativo
+const checkEndGame = () => { 
   
   const disabledCards = document.querySelectorAll('.disabled-card');
 

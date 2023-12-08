@@ -1,83 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/ecomatch.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-    
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/ecomatch.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Ecomatch</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="botao-inicial">
-        <img  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Voltar para a tela inicial"  src="../img/BotaoHome.svg" alt="voltar inicio inicial tela inicial" id="inicio">
+      <img
+        data-bs-toggle="tooltip"
+        data-bs-placement="bottom"
+        data-bs-title="Voltar para a tela inicial"
+        src="../img/BotaoHome.svg"
+        alt="voltar inicio inicial tela inicial"
+        id="inicio"
+      />
     </div>
 
     <div id="confirmationModal" class="modal2">
-        <div id="modalpequeno" class="modal-content2">
-            <p>Tem certeza que deseja voltar para a página inicial?</p>
-            <div class="botoes">            
-                <button id="confirmYes" class="btn btn-outline-success">Sim</button>
-                <button id="confirmNo" class="btn btn-outline-success">Não</button>
-            </div>
+      <div id="modalpequeno" class="modal-content2">
+        <p>Tem certeza que deseja voltar para a página inicial?</p>
+        <div class="botoes">
+          <button id="confirmYes" class="btn btn-outline-success">Sim</button>
+          <button id="confirmNo" class="btn btn-outline-success">Não</button>
         </div>
+      </div>
     </div>
     <main class="container">
-        <div class="imagem">
-            <img src="../img/capivara.svg" alt="">
-        </div>
-        <div class="quiz">
-            <h1> <span>1/5</span> O QUE VOCÊ VÊ NESSA IMAGEM?</h1>
-            <p> <span>A</span> CAPIVARA</p>
-            <p class="folha-b"> <span>B</span>CACHORRO</p>
-            <p class="folha-c"> <span>C</span>CAPIXABA</p>
-            <p class="folha-d"> <span>D</span>CAPITUVAL</p>
-        </div>
-        <div  id="myModal" class="modal">
+      <div class="imagem">
+        <img src="../img/capivara.svg" alt="" />
+      </div>
+      <div class="quiz">
+        <h1><span>1/5</span> O QUE VOCÊ VÊ NESSA IMAGEM?</h1>
+        <p><span>A</span> CAPIVARA</p>
+        <p class="folha-b"><span>B</span>CACHORRO</p>
+        <p class="folha-c"><span>C</span>CAPIXABA</p>
+        <p class="folha-d"><span>D</span>CAPITUVAL</p>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <p id="modalText">PARABÉNS</p>
+          <div class="dados">
+            <div class="tempo">
+              <p>Média de tempo:</p>
 
-            <div class="modal-content">
-
-                <!--   <span class="close">&times;</span> -->
-                <p id="modalText">
-                    PARABÉNS
-                </p>
-                <div class="dados">
-                    <div class="tempo">
-                    <p>Média de tempo:</p>
-
-                        <span class="temporizador">00:00</span>
-                    </div>
-                    <div class="perguntas">
-                        <p>Total de acertos:</p>
-
-                        <span class="acertos"></span>
-                    </div>
-                </div>
-                <div class="btn-quiz" >
-                  <a href="../inicio.html">
-                    <img  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Voltar para a tela inicial"  src="../img/BotaoHome.svg" alt="voltar inicio inicial tela inicial" id="inicio2">
-                  </a>  
-                </div>
+              <span class="temporizador">00:00</span>
             </div>
-        </div>
+            <div class="perguntas">
+              <p>Total de acertos:</p>
 
+              <span class="acertos"></span>
+            </div>
+          </div>
+          <div class="btn-quiz">
+            <a href="../inicio.html">
+              <img
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="Voltar para a tela inicial"
+                src="../img/BotaoHome.svg"
+                alt="voltar inicio inicial tela inicial"
+                id="inicio2"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </main>
     <audio id="matchSound" src="../audios/correct.mp3"></audio>
     <audio id="matchSound2" src="../audios/errado.wav"></audio>
     <script src="app.js"></script>
     <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
       </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-</body>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+  </body>
 </html>

@@ -218,13 +218,12 @@ header{
   }
 }
 
-/* CSS para ocultar o modal até que a página esteja carregada */
 .texto-fase-inicio {
-  display: none; /* Oculta o modal inicialmente */
+  display: none; 
 }
 
 #body.loading .texto-fase-inicio {
-  display: flex; /* Exibe o modal quando a página estiver carregada */
+  display: flex; 
 }
 .modal2 {
   display: none;

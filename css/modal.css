@@ -119,14 +119,6 @@ body {
 
 }
 
-.modal, .show, .fade {
-/*     background-image: url("/img/fundo-modal.svg"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(4px);
-  
-}
 
 #examepleModal {
     backdrop-filter: blur(10);
