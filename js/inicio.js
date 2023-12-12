@@ -9,8 +9,8 @@ const RAaluno = document.getElementById('ra');
 const validateInput = () => {
     const isAllFilled =
     playerName.value.length > 2 &&
-    NomeEscola.value.length > 5 &&
-    RAaluno.value.length > 8;
+    NomeEscola.value.length > 4 &&
+    RAaluno.value.length > 4;
   
     button.disabled = !isAllFilled;
 };
