@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="../img/ecomatch.svg" type="image/x-icon" />
+  <title>Nome do Animal</title>
+</head>
+<body>
+  <div class="botao-inicial">
+    <img
+      data-bs-toggle="tooltip"
+      data-bs-placement="bottom"
+      data-bs-title="Voltar para a tela inicial"
+      src="../img/BotaoHome.svg"
+      alt="voltar inicio inicial tela inicial"
+      id="inicio"
+    />
+  </div>
+
+  <div id="confirmationModal" class="modal2">
+    <div id="modalpequeno" class="modal-content2">
+      <p>Tem certeza que deseja voltar para a página inicial?</p>
+      <div class="botoes">
+        <button id="confirmYes" class="btn btn-outline-success">Sim</button>
+        <button id="confirmNo" class="btn btn-outline-success">Não</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="perguntas"><span>1/5</span>QUAL O NOME DESSE ANIMAL?</div>
+
+  <div class="imagem">
+    <img src="../quiz/img/capivara.svg" alt="" />
+  </div>
+
+  <div id="letras">
+    <span id="1">A</span><span id="2">B</span><span id="3">C</span><span id="4">D</span>
+    
+    
+  </div>
+
+
+
+
+
+  <script src="js/script.js"></script>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  </script>
+</body>
+</html>

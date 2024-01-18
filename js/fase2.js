@@ -3,6 +3,27 @@ const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
 const matchSound = document.getElementById('matchSound');
 
+const soundButton = document.getElementById('imagem2');
+const successLED = document.getElementById('imagem2');
+
+let isSoundOn = true;
+
+soundButton.addEventListener('click', () => {
+  isSoundOn = !isSoundOn;
+  matchSound.muted = !isSoundOn;
+
+  if (isSoundOn) {
+    successLED.src = 'img/som-ativado.svg'; 
+    successLED.classList.add('success');
+    setTimeout(() => {
+      successLED.classList.remove('success');
+    }, 1000);
+  } else {
+    successLED.src = 'img/som.svg'; 
+    
+  }
+});
+
 grid.addEventListener("click", () => {
   if (grid.classList.contains("reveal-card")) {
     grid.classList.remove("reveal-card");
