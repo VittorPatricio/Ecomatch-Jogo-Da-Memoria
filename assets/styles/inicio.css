@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+@font-face {
+  font-family: "BoChild, sans-serif";
+  src: url("../fonts/Bo\ Child.otf");
+}
+
+@font-face {
+  font-family: "CopyDuck, sans-serif";
+  src: url("../fonts/Copyduck.ttf");
+}
+
+::rot {
+  --bg-botao: #a2da5a;
+  --borda-botao: #69c644;
+  --sombra-3d: 0px 4px #379512;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  user-select: none;
+}
+
+.loaded {
+  opacity: 1;
+}
+
+#body {
+  background-color: #f8ffe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.container-imagem {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.animate-svg svg {
+  stroke-width: 2px;
+  stroke: #000;
+  width: 100%;
+  height: 100%;
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
+  animation: svg-animate 4s ease-in-out forwards infinite;
+}
+
+@keyframes svg-animate {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+
+  90% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    fill: white;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+  z-index: 1;
+}
+
+.image {
+  margin-top: 2%;
+  width: 30%;
+  height: 30%;
+}
+
+#imagem-logo {
+  animation: floating 3s infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#botoes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-family: "BoChild, sans-serif";
+}
+
+#botao-iniciar,
+#botao-creditos {
+  color: #fff;
+  animation: textclip 3s linear infinite;
+  border: 3px solid #69c644;
+  box-shadow: 0px 4px #379512;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 20px;
+  background: #a2da5a;
+  animation: pulse 1s infinite;
+  letter-spacing: 6px;
+}
+
+#botao-iniciar:hover,
+#botao-creditos:hover {
+  background-color: #1d7b1a;
+}
+
+#audio {
+  position: relative;
+  left: 50%;
+  padding: 12px 15px;
+}
+
+.icone-audio {
+  width: 26px;
+}
+
+main > p {
+  font-size: 1.4rem;
+  position: relative;
+  bottom: 0;
+  color: #5c9e32;
+  font-weight: 600;
+  font-family: "Concert One", sans-serif;
+}
+@media (max-width: 2560px) {
+  .image {
+    margin-top: 5%;
+    width: 35%;
+    height: 35%;
+  }
+  #botoes {
+    height: 75%;
+    width: 20%;
+  }
+  #botao-iniciar,
+  #botao-creditos {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1980px) {
+  .image {
+    margin-top: 5%;
+    width: 40%;
+    height: 40%;
+  }
+  #botoes {
+    height: 75%;
+    width: 22%;
+  }
+  #botao-iniciar,
+  #botao-creditos {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 884px) {
+  #body {
+    background-image: none;
+  }
+  .image {
+    width: 50%;
+    height: 50%;
+  }
+  #botoes {
+    height: 75%;
+    width: 50%;
+  }
+}
+
+@media (max-width: 560px) {
+  #body {
+    background-image: none;
+  }
+  .image {
+    width: 70%;
+    height: 70%;
+  }
+  #botoes {
+    height: 70%;
+    width: 50%;
+  }
+  #botao-iniciar,
+  #botao-creditos {
+    font-size: 1.2rem;
+  }
+  main > p {
+    font-size: 65%;
+  }
+}
+
+@media (max-width: 320px) {
+  #botao-iniciar,
+  #botao-creditos {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 170px) {
+  .image {
+    width: 40%;
+    height: 40%;
+    margin: 0;
+  }
+  #botoes {
+    height: 35%;
+    width: 20%;
+  }
+  #botao-iniciar,
+  #botao-creditos {
+    border: 0.5px solid #1d7b1a;
+    font-size: 0.5rem;
+    border-radius: 6px;
+    padding: 2px;
+  }
+  main > p {
+    font-size: 20%;
+    margin: 0;
+  }
+}
